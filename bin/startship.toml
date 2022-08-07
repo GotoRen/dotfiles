@@ -1,0 +1,108 @@
+# プロンプトの先頭に改行を表示しない
+add_newline = false
+
+# ディレクトリ配下のファイルを確認するまで 10ms 待つ
+scan_timeout = 10
+
+[battery]
+full_symbol = "🔋"
+charging_symbol = "⚡️"
+discharging_symbol = "💀"
+
+[character]
+success_symbol = "[🚀{っ*´∀`*}っ ⟫⟫⟫](#00FF00 bold)"
+error_symbol = "[💣✗{｡´･ω･`} ⟫⟫⟫](bold red)"
+use_symbol_for_status = true
+
+[directory]
+style = "#FF00FF bold"
+truncation_length = 0
+truncate_to_repo = false
+read_only = "🔒"
+
+[dotnet]
+symbol = "🥅 "
+style = "green"
+heuristic = false
+
+[env_var]
+disabled = false
+
+[git_branch]
+style = "#7CFC00 bold"
+symbol = "🌱: "
+truncation_length = 50
+truncation_symbol = ""
+
+[git_commit]
+disabled = false
+commit_hash_length = 4
+
+[git_state]
+progress_divider = " of "
+cherry_pick = "🍒 PICKING"
+
+[git_status]
+conflicted = "🏳 "
+ahead = "🏎 💨"
+behind = "😰"
+diverged = "😵"
+untracked = "🤷<200d>"
+modified = "📝"
+staged.value = "++"
+staged.style = "green"
+staged_count.enabled = true
+staged_count.style = "green"
+renamed = "👅"
+deleted = "🗑 "
+
+[hostname]
+ssh_only = false
+prefix = "⟪"
+suffix = "⟫"
+trim_at = ".companyname.com"
+disabled = true
+
+[jobs]
+symbol = "+ "
+threshold = 4
+
+[memory_usage]
+show_percentage = true
+show_swap = true
+threshold = -1
+symbol = " "
+separator = "/"
+style = "bold dimmed green"
+
+[nodejs]
+style = "#FF0000"
+symbol = "⬢ "
+
+[ruby]
+symbol = " "
+style = "#ffc0cb"
+
+[package]
+style = "#ffc0cb"
+symbol = " "
+
+[aws]
+format = 'on [$symbol$profile(\($region\))]($style) '
+style = "#FFFF00 bold"
+symbol = "☁️⚡️ AWS>> "
+[aws.region_aliases]
+ap-northeast-1 = "aws-ap"
+us-east-1 = "aws-va"
+
+[gcloud]
+format = 'on [$symbol$account(@$domain)(\($project\))]($style) '
+style = "#00FFFF bold"
+symbol = "☁️⚡️ GCP>> "
+[gcloud.region_aliases]
+us-central1 = "gcp-uc1"
+asia-northeast1 = "gcp-an1"  
+
+[docker_context]
+format = "via [$symbol](blue bold)"
+symbol = "🐳 "
