@@ -214,12 +214,12 @@
   },
 
   // Markdown
-  "markdown.preview.breaks": true, // 改行を反映
-  "markdown.preview.fontSize": 22, // 文字サイズ
-  "markdown.preview.lineHeight": 1.1, // 行幅
-  "markdown.styles": ["~/markdown_pdf.css"],
-  "markdown-pdf.convertOnSave": false, // 保存時に自動でpdf化しない
-  "markdown-pdf.styles": ["~/markdown_pdf.css"],
+  // "markdown.preview.breaks": true, // 改行を反映
+  // "markdown.preview.fontSize": 22, // 文字サイズ
+  // "markdown.preview.lineHeight": 1.1, // 行幅
+  // "markdown.styles": ["~/markdown_pdf.css"],
+  // "markdown-pdf.convertOnSave": false, // 保存時に自動でpdf化しない
+  // "markdown-pdf.styles": ["~/markdown_pdf.css"],
 
   // Shell
   "[shellscript]": {

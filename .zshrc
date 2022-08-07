@@ -87,6 +87,8 @@ alias dc='docker-compose'
 alias didown='docker system prune --all'
 alias dvdown='docker volume prune'
 
+alias k='kubectl'
+
 alias ga='git add'
 alias gs='git status'
 alias gd='git diff'
