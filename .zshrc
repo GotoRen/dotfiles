@@ -104,3 +104,6 @@ alias rfc='rfcbibtex'
 
 ### kubectl
 source <(kubectl completion zsh)
+
+### asdf
+. /usr/local/opt/asdf/libexec/asdf.sh
