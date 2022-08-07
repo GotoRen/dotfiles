@@ -17,3 +17,5 @@
   template = /Users/ren/.stCommitMsg
 [http]
   sslVerify = true
+[safe]
+  directory = /Users/ren/dotfiles

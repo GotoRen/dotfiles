@@ -25,6 +25,19 @@ source $ZPLUGIN_HOME/bin/zi.zsh
 autoload -Uz _zi
 (( ${+_comps} )) && _comps[zi]=_zi
 
+### plugins
+zi light 'zsh-users/zsh-autosuggestions'
+zi light 'zsh-users/zsh-completions'
+zi light 'zdharma/fast-syntax-highlighting'
+zi light 'chrissicool/zsh-256color'
+zi light 'paulirish/git-open'
+zi light 'reegnz/jq-zsh-plugin'
+zi light 'b4b4r07/emoji-cli'
+zi light 'mollifier/anyframe'
+zi light 'b4b4r07/enhancd'
+zi load 'junegunn/fzf-bin'
+zi load 'zdharma/history-search-multi-word'
+
 ### anyenv
 export PATH="$HOME/.anyenv/bin:$PATH"
 eval "$(anyenv init -)"
@@ -87,16 +100,5 @@ alias gh='git checkout'
 
 alias rfc='rfcbibtex'
 
-### plugins
-zi light 'zsh-users/zsh-autosuggestions'
-zi light 'zsh-users/zsh-completions'
-zi light 'zdharma/fast-syntax-highlighting'
-zi light 'chrissicool/zsh-256color'
-zi light 'paulirish/git-open'
-zi light 'reegnz/jq-zsh-plugin'
-zi light 'b4b4r07/emoji-cli'
-zi light 'mollifier/anyframe'
-zi light 'b4b4r07/enhancd'
-
-zi load 'junegunn/fzf-bin'
-zi load 'zdharma/history-search-multi-word'
+### kubectl
+source <(kubectl completion zsh)
