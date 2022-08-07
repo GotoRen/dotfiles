@@ -2,7 +2,7 @@
 A set of vim, zsh, git, and tmux configuration files.
 
 ![GitHub Repo stars](https://img.shields.io/github/stars/GotoRen/dotfiles?style=social)
-![GitHub](https://img.shields.io/github/license/GotoRen/dotfiles?style=flat-square)
+![GitHub](https://img.shields.io/github/license/GotoRen/dotfiles?style=plastic)
 
 This is my personal collection of configuration files.
 
@@ -11,7 +11,7 @@ This is my personal collection of configuration files.
 This repository supports macOS, Linux!
 
 ```sh
-bash -c "$(curl -L https://raw.githubusercontent.com/GotoRen/dotfiles/main/bin/install.sh)"
+bash -c "$(curl -L https://raw.githubusercontent.com/GotoRen/dotfiles/master/bin/install.sh)"
 ```
 
 ### Description
