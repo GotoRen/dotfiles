@@ -1,0 +1,231 @@
+{
+  // Workbench
+  "workbench.colorTheme": "Default High Contrast",
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.startupEditor": "none",
+  "workbench.colorCustomizations": {
+    "editorIndentGuide.activeBackground": "#ff00ff",
+    "editorIndentGuide.background": "#708090"
+  },
+
+  // General
+  "prettier.tabWidth": 2,
+  "emmet.triggerExpansionOnTab": true,
+  "editor.guides.indentation": true,
+  "npm.exclude": "",
+  "explorer.confirmDelete": false,
+  "editor.detectIndentation": false,
+
+  // Latex
+  "latex-workshop.latex.tools": [
+    {
+      "command": "latexmk",
+      "args": [
+        "-interaction=nonstopmode",
+        "-e",
+        "$latex=q/platex %O -synctex=1 -interaction=nonstopmode -file-line-error %S/",
+        "-e",
+        "$bibtex=q/pbibtex %O %B/",
+        "-e",
+        "$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/",
+        "-e",
+        "$makeindex=q/mendex %O -o %D %S/",
+        "-e",
+        "$dvipdf=q/dvipdfmx %O -o %D %S/",
+        "-norc",
+        "-pdfdvi",
+        "%DOC%"
+      ],
+      "name": "latexmk"
+    }
+  ],
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "latexmk (tex to PDF)",
+      "tools": ["latexmk"]
+    }
+  ],
+  "latex-workshop.view.pdf.viewer": "tab",
+  "latex-workshop.latex.clean.subfolder.enabled": true,
+  "latex-workshop.latex.autoClean.run": "onBuilt",
+  "latex-workshop.latex.clean.fileTypes": [
+    "*.aux",
+    "*.bbl",
+    "*.blg",
+    "*.idx",
+    "*.ind",
+    "*.lof",
+    "*.lot",
+    "*.out",
+    "*.toc",
+    "*.acn",
+    "*.acr",
+    "*.alg",
+    "*.glg",
+    "*.glo",
+    "*.gls",
+    "*.ist",
+    "*.fls",
+    "*.log",
+    "*.fdb_latexmk",
+    "*.dvi",
+    "*.synctex.gz"
+  ],
+
+  // Draw.io
+  "hediet.vscode-drawio.local-storage": "eyIuZHJhd2lvLWNvbmZpZyI6IntcImxhbmd1YWdlXCI6XCJcIixcImN1c3RvbUZvbnRzXCI6W10sXCJsaWJyYXJpZXNcIjpcImdlbmVyYWxcIixcImN1c3RvbUxpYnJhcmllc1wiOltcIkwuc2NyYXRjaHBhZFwiXSxcInBsdWdpbnNcIjpbXSxcInJlY2VudENvbG9yc1wiOltcIkE1M0RGRlwiXSxcImZvcm1hdFdpZHRoXCI6XCIyNDBcIixcImNyZWF0ZVRhcmdldFwiOmZhbHNlLFwicGFnZUZvcm1hdFwiOntcInhcIjowLFwieVwiOjAsXCJ3aWR0aFwiOjExNjksXCJoZWlnaHRcIjo4Mjd9LFwic2VhcmNoXCI6dHJ1ZSxcInNob3dTdGFydFNjcmVlblwiOnRydWUsXCJncmlkQ29sb3JcIjpcIiNkMGQwZDBcIixcImRhcmtHcmlkQ29sb3JcIjpcIiM2ZTZlNmVcIixcImF1dG9zYXZlXCI6dHJ1ZSxcInJlc2l6ZUltYWdlc1wiOm51bGwsXCJvcGVuQ291bnRlclwiOjAsXCJ2ZXJzaW9uXCI6MTgsXCJ1bml0XCI6MSxcImlzUnVsZXJPblwiOmZhbHNlLFwidWlcIjpcIlwifSJ9",
+  "hediet.vscode-drawio.theme": "dark",
+  "hediet.vscode-drawio.offline": false,
+
+  // Go
+  "go.useLanguageServer": true,
+  "go.toolsManagement.autoUpdate": true,
+
+  // HTML
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "html.format.contentUnformatted": "",
+  "html.format.enable": true,
+  "html.format.extraLiners": "head, body, /html",
+  "html.format.indentHandlebars": false,
+  "html.format.indentInnerHtml": false,
+  "html.format.maxPreserveNewLines": null,
+  "html.format.preserveNewLines": true,
+  "html.format.unformatted": "wbr",
+  "html.format.wrapAttributes": "auto",
+  "html.format.wrapLineLength": 120,
+
+  // CSS
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "compressed",
+      "extensionName": ".css",
+      "savePath": "/css"
+    }
+  ],
+
+  // JavaScript
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "javascript.format.insertSpaceAfterSemicolonInForStatements": false,
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.linkedEditing": true,
+    "editor.detectIndentation": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.linkedEditing": true,
+    "editor.detectIndentation": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.linkedEditing": true,
+    "editor.detectIndentation": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // JSON
+  "[json]": {
+    "editor.formatOnSave": true,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.formatOnSave": true,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // PHP
+  "[php]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
+    "editor.detectIndentation": false,
+    "editor.formatOnSave": true
+  },
+  "[smarty]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "aswinkumar863.smarty-template-support",
+    "editor.formatOnSave": true
+  },
+
+  // Terraform
+  "[terraform]": {
+    "editor.defaultFormatter": "hashicorp.terraform",
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": {
+      "source.formatAll.terraform": true
+    }
+  },
+  "[terraform-vars]": {
+    "editor.defaultFormatter": "hashicorp.terraform",
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": {
+      "source.formatAll.terraform": true
+    }
+  },
+
+  // YAML
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml",
+    "editor.formatOnSave": true
+  },
+  "yaml.format.enable": true,
+  "redhat.telemetry.enabled": true,
+
+  // Python
+  "[python]": {
+    "editor.formatOnSave": true
+  },
+  "python.linting.pylintEnabled": true,
+  "python.formatting.provider": "black",
+
+  // SQL
+  "[sql]": {
+    "editor.defaultFormatter": "adpyke.vscode-sql-formatter",
+    "editor.formatOnSave": true
+  },
+
+  // SQLite
+  "workbench.editorAssociations": {
+    "*.sqlite": "default"
+  },
+
+  // Markdown
+  "markdown.preview.breaks": true, // 改行を反映
+  "markdown.preview.fontSize": 22, // 文字サイズ
+  "markdown.preview.lineHeight": 1.1, // 行幅
+  "markdown.styles": ["~/markdown_pdf.css"],
+  "markdown-pdf.convertOnSave": false, // 保存時に自動でpdf化しない
+  "markdown-pdf.styles": ["~/markdown_pdf.css"],
+
+  // Shell
+  "[shellscript]": {
+    "editor.defaultFormatter": "mkhl.shfmt",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  }
+}

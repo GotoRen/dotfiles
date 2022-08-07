@@ -1,0 +1,19 @@
+[user]
+  name = GotoRen
+  email = r0719en@pluslab.org
+[alias]
+  graph = log --graph --date-order -C -M --pretty=format:\"<%h> %ad [%an] %Cgreen%d%Creset %s\" --all --date=short
+[color]
+  ui = true
+[core]
+  excludesfile = /Users/ren/.gitignore_global
+[difftool "sourcetree"]
+  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+  path = 
+[mergetool "sourcetree"]
+  cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  trustExitCode = true
+[commit]
+  template = /Users/ren/.stCommitMsg
+[http]
+  sslVerify = true
