@@ -1,0 +1,5 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/ren/src/dotfiles'
+bash -c "$(curl -L https://raw.githubusercontent.com/GotoRen/dotfiles/main/bin/install.sh)"
+make: Leaving directory `/Users/ren/src/dotfiles'
+ 
