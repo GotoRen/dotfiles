@@ -44,30 +44,17 @@ zi load 'zdharma/history-search-multi-word'
 ####################################################
 ### commnad
 ###################################################@
+alias brew="PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin brew"
+alias sz='source ~/.zshrc'
+alias rezsh='exec $SHELL -l'
+
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
+alias ll='exa --icons -la -T --git --color=always --time-style=long-iso -L 1'
+alias c='clear'
 
 alias lg='lazygit'
-alias ll='exa --icons -la -T --git --color=always --time-style=long-iso -L 1'
-alias sz='source ~/.zshrc'
-alias rezsh='exec $SHELL -l'
-alias listen='lsof -i -P'
-alias brew="PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin brew"
-alias c='clear'
-alias gcp='gcloud'
-alias tf='terraform'
-
-alias dp='docker ps'
-alias di='docker images'
-alias dn='docker network ls'
-alias dv='docker volume ls'
-alias dc='docker-compose'
-alias didown='docker system prune --all'
-alias dvdown='docker volume prune'
-
-alias k='kubectl'
-
 alias ga='git add'
 alias gs='git status'
 alias gd='git diff'
@@ -79,14 +66,28 @@ alias gc='git clone'
 alias gb='git branch'
 alias gh='git checkout'
 
+alias dp='docker ps'
+alias di='docker images'
+alias dn='docker network ls'
+alias dv='docker volume ls'
+alias dc='docker-compose'
+alias didown='docker system prune --all'
+alias dvdown='docker volume prune'
+
+alias k='kubectl'
+alias h='helm'
+
+alias listen='lsof -i -P'
+alias gcp='gcloud'
+alias tf='terraform'
 alias rfc='rfcbibtex'
 
 ####################################################
 ### version control
 ####################################################
 ### anyenv
-export PATH="$HOME/.anyenv/bin:$PATH"
-eval "$(anyenv init -)"
+#export PATH="$HOME/.anyenv/bin:$PATH"
+#eval "$(anyenv init -)"
 
 ### nvm
 source $(brew --prefix nvm)/nvm.sh
@@ -118,6 +119,7 @@ export AWS_PROFILE=awsGeneral-1
 ### GCP profile
 source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
 source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
+export USE_GKE_GCLOUD_AUTH_PLUGIN=True
 
 ### krew
 export PATH="${PATH}:${HOME}/.krew/bin"
