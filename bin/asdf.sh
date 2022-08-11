@@ -21,11 +21,17 @@ tools=(
   hadolint
   terraform-ls
   ruby
+  direnv
 )
 
 echo "\n. $(brew --prefix asdf)/libexec/asdf.sh" >> ${ZDOTDIR:-~}/.zshrc
 
 echo "Running asdf install tools..."
 for tool in "${tools[@]}"; do
-  asdf plugin add ${tool} && asdf install ${tool} latest && asdf global ${tool} latest
+  asdf plugin add ${tool}
+  asdf install ${tool} latest
+  asdf global ${tool} latest
+  if [ $tool = "direnv"  ]; then
+    asdf direnv setup --shell bash --version latest
+  fi
 done

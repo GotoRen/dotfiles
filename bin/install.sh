@@ -57,4 +57,3 @@ fi
 
 ### Then, it performs setup.sh.
 sh $DOTPATH/bin/setup.sh
-git config --global core.excludesfile $HOME/.gitignore_global

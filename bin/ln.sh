@@ -1,24 +1,18 @@
 #!/bin/bash -e
 
 DOTPATH=$HOME/dotfiles
+VSCODEPATH=$DOTPATH/bin/vscode
 
-### Todo: check existence.
-ln -s $DOTPATH/.zshrc $HOME/.zshrc
-ln -s $DOTPATH/.gitconfig $HOME/.gitconfig
-ln -s $DOTPATH/.gitignore_global $HOME/.gitignore_global
+ls -a $VSCODEPATH | grep -E '.json' | while read f; do
+  echo $f
+  ln -s $VSCODEPATH/$f $HOME/Library/Application\ Support/Code/User/$f
+done
 
-ln -s $DOTPATH/bin/vscode/settings.json $HOME/Library/Application\ Support/Code/User/settings.json
-ln -s $DOTPATH/bin/vscode/keybindings.json $HOME/Library/Application\ Support/Code/User/keybindings.json
-
-ln -s $DOTPATH/.ssh_config $HOME/.ssh/config
-
-ln -s $DOTPATH/starship.toml $HOME/.config/starship.toml
-
-
-# ls -a | grep -Ev "README|bin|\.$|^\.git$" | while read f; do
-#   if [ $f = ".ssh_config"  ]; then
-#     ln -s $f $HOME/.ssh/config
-#   else
-#     ln -s $f $HOME/
-#   fi
-# done
+ls -a ../ | grep -Ev "README|bin|nvim|zsh|vscode|\.$|^\.git$" | while read f; do
+  if [ $f = ".ssh_config"  ]; then
+    ln -s $f $HOME/.ssh/config
+  fi
+  if [ $f = "starship.toml"  ]; then
+    ln -s $f $HOME/.config/$f
+  fi
+done
