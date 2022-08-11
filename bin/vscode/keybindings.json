@@ -1,0 +1,12 @@
+// 既定値を上書きするには、このファイル内にキー バインドを挿入します
+[
+  {
+    "key": "cmd+n",
+    "command": "explorer.newFile"
+  },
+  {
+    "key": "ctrl+cmd+n",
+    "command": "explorer.newFolder"
+  }
+]
+

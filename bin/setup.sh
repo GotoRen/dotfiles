@@ -2,3 +2,6 @@
 
 DOTPATH=~/dotfiles
 sh $DOTPATH/bin/ln.sh
+sh $DOTPATH/bin/brew.sh
+sh $DOTPATH/bin/asdf.sh
+sh $DOTPATH/bin/nvm.sh

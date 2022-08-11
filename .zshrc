@@ -85,15 +85,11 @@ alias rfc='rfcbibtex'
 ####################################################
 ### version control
 ####################################################
-### anyenv
-#export PATH="$HOME/.anyenv/bin:$PATH"
-#eval "$(anyenv init -)"
+### asdf
+. /usr/local/opt/asdf/libexec/asdf.sh
 
 ### nvm
 source $(brew --prefix nvm)/nvm.sh
-
-### asdf
-. /usr/local/opt/asdf/libexec/asdf.sh
 
 ####################################################
 ### tools
@@ -128,7 +124,7 @@ export PATH="${PATH}:${HOME}/.krew/bin"
 source <(kubectl completion zsh)
 
 ## antigen
-if [[ -f $HOME/.zsh/antigen/antigen.zsh ]]; then
-  source $HOME/.zsh/antigen/antigen.zsh
-  antigen apply
-fi
+# if [[ -f $HOME/.zsh/antigen/antigen.zsh ]]; then
+#   source $HOME/.zsh/antigen/antigen.zsh
+#   antigen apply
+# fi

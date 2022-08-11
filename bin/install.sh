@@ -1,4 +1,4 @@
-#!/bin/bash -e
+#!/bin/bash
 
 DOTPATH=~/dotfiles
 GITHUB_URL=https://github.com/GotoRen/dotfiles
@@ -33,17 +33,16 @@ if [ "${OS_TYPE}" == "" ]; then
   _error "Not supported OS. [${OS_NAME}]"
 fi
 
-### Todo: check existence.
-# if [ "${OS_TYPE}" == "brew" ]; then
-#   xcode-select --install
-# elif [ "${OS_TYPE}" == "apt" ]; then
-#   sudo apt update && sudo apt upgrade -y
-#   sudo apt install -y build-essential curl file git
-# elif [ "${OS_TYPE}" == "yum" ]; then
-#   sudo yum groupinstall -y 'Development Tools'
-#   sudo yum install -y curl file git
-#   sudo yum install -y libxcrypt-compat
-# fi
+if [ "${OS_TYPE}" == "brew" ]; then
+  xcode-select --install
+elif [ "${OS_TYPE}" == "apt" ]; then
+  sudo apt update && sudo apt upgrade -y
+  sudo apt install -y build-essential curl file git
+elif [ "${OS_TYPE}" == "yum" ]; then
+  sudo yum groupinstall -y 'Development Tools'
+  sudo yum install -y curl file git
+  sudo yum install -y libxcrypt-compat
+fi
 
 if type "git" >/dev/null 2>&1; then
   if [ -d $DOTPATH ]; then
