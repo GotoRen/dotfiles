@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DOTPATH=~/dotfiles
+DOTPATH=$HOME/dotfiles
 GITHUB_URL=https://github.com/GotoRen/dotfiles
 OS_NAME="$(uname | awk '{print tolower($0)}')"
 OS_FULL="$(uname -a)"
@@ -57,3 +57,4 @@ fi
 
 ### Then, it performs setup.sh.
 sh $DOTPATH/bin/setup.sh
+git config --global core.excludesfile $HOME/.gitignore_global

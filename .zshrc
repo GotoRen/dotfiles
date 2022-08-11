@@ -87,6 +87,7 @@ alias rfc='rfcbibtex'
 ####################################################
 ### asdf
 . /usr/local/opt/asdf/libexec/asdf.sh
+eval "$(direnv hook zsh)"
 
 ### nvm
 source $(brew --prefix nvm)/nvm.sh

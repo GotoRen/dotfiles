@@ -20,6 +20,7 @@ tools=(
   terraform-docs
   hadolint
   terraform-ls
+  ruby
 )
 
 echo "\n. $(brew --prefix asdf)/libexec/asdf.sh" >> ${ZDOTDIR:-~}/.zshrc
