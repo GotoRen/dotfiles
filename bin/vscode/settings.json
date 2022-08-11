@@ -14,7 +14,6 @@
   "editor.guides.indentation": true,
   "npm.exclude": "",
   "explorer.confirmDelete": false,
-  "editor.detectIndentation": false,
 
   // Latex
   "latex-workshop.latex.tools": [
@@ -172,19 +171,29 @@
   },
 
   // Terraform
+  // "[terraform]": {
+  //   "editor.defaultFormatter": "hashicorp.terraform",
+  //   "editor.formatOnSave": false,
+  //   "editor.codeActionsOnSave": {
+  //     "source.formatAll.terraform": true
+  //   }
+  // },
+  // "[terraform-vars]": {
+  //   "editor.defaultFormatter": "hashicorp.terraform",
+  //   "editor.formatOnSave": false,
+  //   "editor.codeActionsOnSave": {
+  //     "source.formatAll.terraform": true
+  //   }
+  // },
   "[terraform]": {
     "editor.defaultFormatter": "hashicorp.terraform",
-    "editor.formatOnSave": false,
-    "editor.codeActionsOnSave": {
-      "source.formatAll.terraform": true
-    }
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file"
   },
   "[terraform-vars]": {
     "editor.defaultFormatter": "hashicorp.terraform",
-    "editor.formatOnSave": false,
-    "editor.codeActionsOnSave": {
-      "source.formatAll.terraform": true
-    }
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file"
   },
 
   // YAML
@@ -212,20 +221,6 @@
   "workbench.editorAssociations": {
     "*.sqlite": "default"
   },
-
-  // Markdown
-  // "markdown.preview.breaks": true, // 改行を反映
-  // "markdown.preview.fontSize": 22, // 文字サイズ
-  // "markdown.preview.lineHeight": 1.1, // 行幅
-  // "markdown.styles": ["~/markdown_pdf.css"],
-  // "markdown-pdf.convertOnSave": false, // 保存時に自動でpdf化しない
-  // "markdown-pdf.styles": ["~/markdown_pdf.css"],
-
-  // Shell
-  "[shellscript]": {
-    "editor.defaultFormatter": "mkhl.shfmt",
-    "editor.formatOnSave": true,
-    "editor.tabSize": 2,
-    "editor.insertSpaces": true
-  }
+  "vsicons.dontShowNewVersionMessage": true,
+  "window.zoomLevel": 1
 }
