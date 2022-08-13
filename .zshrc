@@ -6,6 +6,7 @@ if [ -d $ZSH_PATH ]; then
   source $ZSH_PATH/plugins.zsh
   source $ZSH_PATH/config.zsh
   source $ZSH_PATH/alias.zsh
+  source $ZSH_PATH/functions.zsh
 else
   print "ZSH CONFIGS NOT FOUND: ~/.zsh"
 fi
