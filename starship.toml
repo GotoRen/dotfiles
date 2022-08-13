@@ -12,7 +12,6 @@ discharging_symbol = "💀"
 [character]
 success_symbol = "[🚀{っ*´∀`*}っ ⟫⟫⟫](#00FF00 bold)"
 error_symbol = "[💣✗{｡´･ω･`} ⟫⟫⟫](bold red)"
-use_symbol_for_status = true
 
 [directory]
 style = "#FF00FF bold"
@@ -39,7 +38,6 @@ disabled = false
 commit_hash_length = 4
 
 [git_state]
-progress_divider = " of "
 cherry_pick = "🍒 PICKING"
 
 [git_status]
@@ -49,10 +47,6 @@ behind = "😰"
 diverged = "😵"
 untracked = "🤷<200d>"
 modified = "📝"
-staged.value = "++"
-staged.style = "green"
-staged_count.enabled = true
-staged_count.style = "green"
 renamed = "👅"
 deleted = "🗑 "
 
@@ -68,11 +62,8 @@ symbol = "+ "
 threshold = 4
 
 [memory_usage]
-show_percentage = true
-show_swap = true
 threshold = -1
 symbol = " "
-separator = "/"
 style = "bold dimmed green"
 
 [nodejs]
