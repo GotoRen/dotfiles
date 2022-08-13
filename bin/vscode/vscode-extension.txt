@@ -1,13 +1,17 @@
+ChakrounAnas.turbo-console-log
+EditorConfig.EditorConfig
+James-Yu.latex-workshop
+MS-CEINTL.vscode-language-pack-ja
 adpyke.vscode-sql-formatter
 alexcvzz.vscode-sqlite
 aswinkumar863.smarty-template-support
 bierner.markdown-preview-github-styles
 bmewburn.vscode-intelephense-client
+bodil.prettier-toml
 bungcip.better-toml
-ChakrounAnas.turbo-console-log
 cstrap.flask-snippets
+donovan.vscode-terraform
 dunstontc.vscode-go-syntax
-EditorConfig.EditorConfig
 eightHundreds.vscode-drawio
 esbenp.prettier-vscode
 formulahendry.auto-close-tag
@@ -18,12 +22,12 @@ hashicorp.terraform
 hediet.vscode-drawio
 imperez.smarty
 jackfranklin.vscode-go-to-file
-James-Yu.latex-workshop
+janisdd.vscode-edit-csv
 junstyle.php-cs-fixer
 mariusschulz.yarn-lock-syntax
 mkhl.shfmt
 ms-azuretools.vscode-docker
-MS-CEINTL.vscode-language-pack-ja
+ms-kubernetes-tools.vscode-kubernetes-tools
 ms-python.python
 ms-python.vscode-pylance
 ms-toolsai.jupyter
@@ -39,6 +43,7 @@ qwtel.sqlite-viewer
 redhat.vscode-yaml
 rohit-chouhan.sqlite-snippet
 styled-components.vscode-styled-components
+syler.sass-indented
 tialki.tex-preview
 travnsam.vscode-stm32cube-configurator
 vmsynkov.colonize
@@ -49,3 +54,4 @@ xabikos.JavaScriptSnippets
 xshrim.txt-syntax
 youngjuning.yarn-lock-preview
 yzane.markdown-pdf
+zaaack.markdown-editor

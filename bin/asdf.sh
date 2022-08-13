@@ -17,6 +17,7 @@ tools=(
   kustomize
   php
   pre-commit
+  python
   ruby
   sops
   terraform
