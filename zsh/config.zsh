@@ -39,3 +39,5 @@ export PATH="${PATH}:${HOME}/.krew/bin"
 
 ### kubectl
 source <(kubectl completion zsh)
+source <(kustomize completion zsh)
+source <(helm completion zsh)

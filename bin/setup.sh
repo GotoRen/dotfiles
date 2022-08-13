@@ -8,5 +8,3 @@ sh $DOTPATH/bin/nvm.sh
 sh $DOTPATH/bin/vscode/vscode.sh
 
 sh $DOTPATH/bin/ln.sh
-
-git config --global core.excludesfile $HOME/.gitignore_global

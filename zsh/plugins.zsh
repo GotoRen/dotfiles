@@ -27,8 +27,14 @@ zi light stedolan/jq
 zi ice as"command" from"gh-r" mv"bat* -> bat" pick"bat/bat"
 zi light sharkdp/bat
  
-# other
+# zdharma/fast-syntax-highlighting
 zi light 'zdharma/fast-syntax-highlighting'
+
+# paulirish/git-open
 zi light 'paulirish/git-open'
+
+# b4b4r07/emoji-cli
 zi light 'b4b4r07/emoji-cli'
+
+# mollifier/anyframe
 zi light 'mollifier/anyframe'
