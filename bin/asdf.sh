@@ -1,27 +1,28 @@
 #!/bin/bash -e
 
 tools=(
-  fd
-  golang
-  kubectl
-  kubie
-  pre-commit
-  k9s
-  terraform
-  awscli
-  helm
-  sops
-  kustomize
   argo
   argocd
-  jq
-  yq
-  kubetail
-  terraform-docs
-  hadolint
-  terraform-ls
-  ruby
+  awscli
   direnv
+  fd
+  golang
+  hadolint
+  helm
+  jq
+  k9s
+  kubectl
+  kubetail
+  kubie
+  kustomize
+  php
+  pre-commit
+  ruby
+  sops
+  terraform
+  terraform-docs
+  terraform-ls
+  yq
 )
 
 echo "\n. $(brew --prefix asdf)/libexec/asdf.sh" >> ${ZDOTDIR:-~}/.zshrc
@@ -35,3 +36,5 @@ for tool in "${tools[@]}"; do
     asdf direnv setup --shell bash --version latest
   fi
 done
+
+asdf update

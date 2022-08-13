@@ -3,9 +3,9 @@
 nvm install node
 
 packages=(
-  yarn
-  vue-cli
   typescript
+  vue-cli
+  yarn
 )
 
 echo "Running nvm install packages..."

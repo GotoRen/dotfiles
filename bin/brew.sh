@@ -44,9 +44,6 @@ if [ "${OS_NAME}" == "darwin" ]; then
       # x86/x64
       eval "$(/usr/local/bin/brew shellenv)"    
     fi
-
-    cd $DOTFILES
-    brew bundle
   fi
   cd $DOTFILES
   brew bundle
@@ -57,13 +54,9 @@ elif [ "${OS_NAME}" == "linux" ]; then
       echo 'WSL installing Homebrew'
       /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
       eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
-      cd $DOTFILES
-      brew bundle
     else
       /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
       eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
-      cd $DOTFILES
-      brew bundle
     fi
   fi
   cd $DOTFILES
@@ -74,3 +67,7 @@ elif [ "$(expr substr $(uname -s) 1 10)" == 'MINGW32_NT' ]; then
 else
   echo "Your platform ($(uname -a)) is not supported."
 fi
+
+brew update
+brew upgrade
+brew doctor

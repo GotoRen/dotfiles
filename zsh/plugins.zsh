@@ -6,35 +6,37 @@ zi light zsh-users/zsh-completions
 zi ice wait lucid atload"!_zsh_autosuggest_start"
 zi load zsh-users/zsh-autosuggestions
 
-# TERM 256 color
+# term 256 color
 zi light chrissicool/zsh-256color
 
 # jq enhance plugin
 zi light reegnz/jq-zsh-plugin
 
-# change directory enhancd
+# enhancd
 zi light b4b4r07/enhancd
 
-# junegunn/fzf
+# fzf
 zi ice as"command" from"gh-r" mv"fzf* -> fzf" pick"fzf/fzf"
 zi light junegunn/fzf
 
-# stedolan/jq
+# jq command
 zi ice as"command" from"gh-r" mv"jq* -> jq" pick"jq"
 zi light stedolan/jq
 
-# sharkdp/bat
+# file output
 zi ice as"command" from"gh-r" mv"bat* -> bat" pick"bat/bat"
 zi light sharkdp/bat
  
-# zdharma/fast-syntax-highlighting
+# syntax highlight
 zi light 'zdharma/fast-syntax-highlighting'
 
-# paulirish/git-open
+# git open
 zi light 'paulirish/git-open'
 
-# b4b4r07/emoji-cli
+# emoji
 zi light 'b4b4r07/emoji-cli'
+bindkey '^xe' emoji::cli
+bindkey '^x^e' emoji::cli
 
-# mollifier/anyframe
+# cooperation with peco
 zi light 'mollifier/anyframe'
