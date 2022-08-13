@@ -1,6 +1,7 @@
 alias brew="PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin brew"
 alias sz='source ~/.zshrc'
 alias rezsh='exec $SHELL -l'
+alias hi='history -30'
 
 alias ..='cd ..'
 alias ...='cd ../..'
