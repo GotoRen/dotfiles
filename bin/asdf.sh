@@ -6,6 +6,7 @@ tools=(
   awscli
   direnv
   fd
+  gcloud
   golang
   hadolint
   helm
