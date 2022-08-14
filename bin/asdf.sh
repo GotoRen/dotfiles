@@ -19,6 +19,7 @@ tools=(
   pre-commit
   python
   ruby
+  rust
   sops
   terraform
   terraform-docs

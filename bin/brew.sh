@@ -3,6 +3,7 @@
 OS_NAME="$(uname | awk '{print tolower($0)}')"
 OS_FULL="$(uname -a)"
 OS_TYPE=
+OS=
 # env
 DOTFILES="$(
   cd $(dirname $0)
@@ -34,6 +35,9 @@ if [ "${OS_TYPE}" == "" ]; then
   echo -e "Not supported OS. [${OS_NAME}]"
 fi
 
+brew bundle cleanup
+brew bundle list
+
 if [ "${OS_NAME}" == "darwin" ]; then
   if !(which brew); then
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -45,9 +49,13 @@ if [ "${OS_NAME}" == "darwin" ]; then
       eval "$(/usr/local/bin/brew shellenv)"    
     fi
   fi
+  OS='Mac'
   cd $DOTFILES
   brew bundle
-  OS='Mac'
+  brew bundle check
+  brew update
+  brew upgrade
+  brew doctor
 elif [ "${OS_NAME}" == "linux" ]; then
   if !(which brew); then
     if [[ "$(uname -r)" == *microsoft* ]]; then
@@ -59,15 +67,15 @@ elif [ "${OS_NAME}" == "linux" ]; then
       eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
     fi
   fi
+  OS='Linux'
   cd $DOTFILES
   brew bundle
-  OS='Linux'
+  brew bundle check
+  brew update
+  brew upgrade
+  brew doctor
 elif [ "$(expr substr $(uname -s) 1 10)" == 'MINGW32_NT' ]; then
   OS='Cygwin'
 else
   echo "Your platform ($(uname -a)) is not supported."
 fi
-
-brew update
-brew upgrade
-brew doctor
