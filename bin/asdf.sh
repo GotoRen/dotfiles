@@ -5,6 +5,7 @@ tools=(
   argocd
   awscli
   direnv
+  eksctl
   fd
   gcloud
   golang
