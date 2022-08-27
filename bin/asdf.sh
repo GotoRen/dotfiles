@@ -11,8 +11,15 @@ tools=(
   golang
   hadolint
   helm
+  helm-cr
+  helm-ct
+  helm-diff
+  helm-docs
+  helmfile
+  helmsman
   jq
   k9s
+  ksops
   kubectl
   kubetail
   kubie
@@ -23,9 +30,11 @@ tools=(
   ruby
   rust
   sops
+  sopstool
   terraform
   terraform-docs
   terraform-ls
+  yarn
   yq
 )
 

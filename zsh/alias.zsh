@@ -3,9 +3,9 @@ alias sz='source ~/.zshrc'
 alias rezsh='exec $SHELL -l'
 alias hi='history -30'
 
-alias ..='cd ..'
-alias ...='cd ../..'
-alias ....='cd ../../..'
+alias ..='cd ../'
+alias ...='cd ../../'
+alias ....='cd ../../../'
 alias ll='exa --icons -la -T --git --color=always --time-style=long-iso -L 1'
 alias c='clear'
 
