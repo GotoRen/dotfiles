@@ -1,6 +1,7 @@
 #!/bin/bash -e
 
 tools=(
+  aks-engine
   argo
   argocd
   awscli
@@ -17,13 +18,19 @@ tools=(
   helm-docs
   helmfile
   helmsman
+  janet
   jq
+  jsonnet
   k9s
+  kind
+  kscript
+  ksonnet
   ksops
   kubectl
   kubetail
   kubie
   kustomize
+  minikube
   php
   pre-commit
   python

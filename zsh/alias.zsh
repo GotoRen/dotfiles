@@ -29,6 +29,7 @@ alias dc='docker-compose'
 alias didown='docker system prune --all'
 alias dvdown='docker volume prune'
 
+alias al='asdf plugin list all'
 alias k='kubectl'
 alias h='helm'
 
