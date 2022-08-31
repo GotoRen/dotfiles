@@ -7,17 +7,15 @@
 [color]
   ui = true
 [core]
-  excludesfile = $HOME/.gitignore_global
+	excludesfile = /Users/s19240/.gitignore_global
 [difftool "sourcetree"]
   cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-  path = 
 [mergetool "sourcetree"]
   cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
   trustExitCode = true
 [commit]
-  template =  $HOME/.stCommitMsg
+  template = $HOME/.stCommitMsg
 [http]
   sslVerify = true
 [safe]
-  directory =  $HOME/dotfiles
-
+  directory = $HOME/dotfiles
