@@ -10,7 +10,6 @@ DOTFILES="$(
   pwd
 )/.."
 
-echo "[debug] dotfiles env"
 echo "${DOTFILES}"
 
 if [ "${OS_NAME}" == "linux" ]; then
