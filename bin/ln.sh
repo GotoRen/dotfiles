@@ -26,4 +26,3 @@ ls -a $DOTPATH | grep -Ev "README|bin|vim|\zsh$|vscode|\.$|^\.git$|Brewfile|LICE
   fi
   git config --global core.excludesfile $HOME/.gitignore_global
 done
-
