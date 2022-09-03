@@ -8,6 +8,7 @@ bungcip.better-toml
 ChakrounAnas.turbo-console-log
 cstrap.flask-snippets
 donovan.vscode-terraform
+dunstontc.viml
 dunstontc.vscode-go-syntax
 EditorConfig.EditorConfig
 eightHundreds.vscode-drawio

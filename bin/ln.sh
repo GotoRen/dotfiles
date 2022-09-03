@@ -12,8 +12,11 @@ done
 ln -snfv $VSCODEPATH/md-preview.css $HOME/.vscode/extensions/bierner.markdown-preview-github-styles-1.0.1/dist/base.css
 
 ### /vim
-ls -a $VIMPATH | grep -Ev "\.$" | while read f; do
-  ln -snfv $VIMPATH/$f $HOME/$f
+ls -a $VIMPATH | grep -Ev "\.$|.sh|plugins" | while read f; do
+  ln -snfv $VIMPATH/$f $HOME/.config/nvim/$f
+done
+ls -a $VIMPATH/plugins | grep -Ev "\.$" | while read f; do
+  ln -snfv $VIMPATH/plugins/$f $HOME/.config/nvim/plugins/$f
 done
 
 ### special files.
