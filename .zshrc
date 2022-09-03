@@ -10,5 +10,3 @@ if [ -d $ZSH_PATH ]; then
 else
   print "ZSH CONFIGS NOT FOUND: ~/.zsh"
 fi
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
