@@ -1,4 +1,4 @@
-#!/bin/bash -e
+#!/bin/bash
 
 DOTPATH=$HOME/dotfiles
 GITHUB_URL=https://github.com/GotoRen/dotfiles

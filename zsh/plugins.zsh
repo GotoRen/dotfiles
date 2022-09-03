@@ -1,6 +1,8 @@
 # zsh-completions
 zi ice wait lucid blockf atpull'zi creinstall -q .'
 zi light zsh-users/zsh-completions
+autoload -U compinit
+compinit -u
 
 # zsh-autosuggestions
 zi ice wait lucid atload"!_zsh_autosuggest_start"

@@ -9,7 +9,8 @@ tools=(
   dyff
   eksctl
   fd
-  gcloud
+  flutter
+  fzf
   golang
   hadolint
   helm
@@ -19,16 +20,18 @@ tools=(
   helm-docs
   helmfile
   helmsman
-  janet
   jq
   jsonnet
   k9s
   kind
+  ko
+  kops
+  kotlin
   kscript
-  ksonnet
-  ksops
+  kube-linter
   kubectl
-  kubetail
+  kubectx
+  kubeval
   kubie
   kustomize
   minikube
@@ -42,18 +45,17 @@ tools=(
   terraform
   terraform-docs
   terraform-ls
-  yarn
   yq
 )
 
-echo "\n. $(brew --prefix asdf)/libexec/asdf.sh" >> ${ZDOTDIR:-~}/.zshrc
+# echo "\n. $(brew --prefix asdf)/libexec/asdf.sh" >>${ZDOTDIR:-~}/.zshrc
 
 echo "Running asdf install tools..."
 for tool in "${tools[@]}"; do
   asdf plugin add ${tool}
   asdf install ${tool} latest
   asdf global ${tool} latest
-  if [ $tool = "direnv"  ]; then
+  if [ $tool = "direnv" ]; then
     asdf direnv setup --shell bash --version latest
   fi
 done
