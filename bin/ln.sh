@@ -6,9 +6,10 @@ VIMPATH="${DOTPATH}/vim"
 VSCODEPATH="${BINPATH}/vscode"
 
 ### /bin/vscode
-ls -a $VSCODEPATH | grep -E '.json' | while read f; do
+ls -a $VSCODEPATH | grep -E ".json" | while read f; do
   ln -snfv $VSCODEPATH/$f $HOME/Library/Application\ Support/Code/User/$f
 done
+ln -snfv $VSCODEPATH/base.css $HOME/.vscode/extensions/bierner.markdown-preview-github-styles-1.0.1/dist/base.css
 
 ### /vim
 ls -a $VIMPATH | grep -Ev "\.$" | while read f; do
