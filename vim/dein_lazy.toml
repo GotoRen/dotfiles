@@ -3,6 +3,51 @@ repo  = 'prettier/vim-prettier'
 build = 'npm install'
 on_ft = ['javascript', 'typescript']
 hook_source = '''
-  let g:prettier#autoformat = 0
-  autocmd BufWritePre *.js,*.json,*.tsx PrettierAsync
+source ~/.config/nvim/plugins/vim-prettier.vim
+'''
+
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+depends = ['ryanoasis/vim-devicons']
+on_event='NERDTreeToggle'
+hook_add='''
+source ~/.config/nvim/plugins/nerdtree.vim
+'''
+
+[[plugins]]
+repo = 'ryanoasis/vim-devicons'
+on_source='nerdtree'
+
+[[plugins]]
+repo = 'simeji/winresizer'
+on_event='WinResizerStartResize'
+hook_add='''
+source ~/.config/nvim/plugins/winresizer.vim
+'''
+
+[[plugins]]
+repo = 'thinca/vim-quickrun'
+hook_add = '''
+source ~/.config/nvim/plugins/vim-quickrun.vim
+'''
+
+[[plugins]]
+repo = 'Shougo/vimproc.vim'
+
+[[plugins]]
+repo = 'vim-scripts/DoxygenToolkit.vim'
+on_ft = ['c', 'cpp']
+hook_add = '''
+source ~/.config/nvim/plugins/DoxygenToolkit.vim
+'''
+
+[[plugins]]
+repo = 'cespare/vim-toml'
+on_ft = ['toml']
+
+[[plugins]]
+repo = 'alvan/vim-closetag'
+on_ft = ['js', 'html']
+hook_add = '''
+source ~/.config/nvim/plugins/vim-closetag.vim
 '''

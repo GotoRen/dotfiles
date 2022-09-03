@@ -10,37 +10,25 @@ repo = 'Townk/vim-autoclose'
 [[plugins]]
 repo = 'joshdick/onedark.vim'
 hook_add = '''
-  source ~/.config/nvim/plugins/onedark.vim
-'''
-
-[[plugins]]
-repo = 'airblade/vim-gitgutter'
-hook_add = '''
-  source ~/.config/nvim/plugins/gitgutter.vim
-'''
-
-[[plugins]]
-repo = 'tpope/vim-fugitive'
-hook_add = '''
-  source ~/.config/nvim/plugins/fugitive.vim
+source ~/.config/nvim/plugins/onedark.vim
 '''
 
 [[plugins]]
 repo = 'Shougo/denite.nvim'
 hook_add = '''
-  source ~/.config/nvim/plugins/denite.vim
+source ~/.config/nvim/plugins/denite.vim
 '''
 
 [[plugins]]
 repo = 'osyo-manga/vim-anzu'
 hook_add = '''
-  source ~/.config/nvim/plugins/anzu.vim
+source ~/.config/nvim/plugins/anzu.vim
 '''
 
 [[plugins]]
 repo = 'prabirshrestha/vim-lsp'
 hook_add = '''
-  source ~/.config/nvim/plugins/vim-lsp.vim
+source ~/.config/nvim/plugins/vim-lsp.vim
 '''
 
 [[plugins]]
@@ -56,8 +44,66 @@ repo = 'prabirshrestha/asyncomplete-lsp.vim'
 repo = 'Shougo/deoplete.nvim'
 on_event = 'InsertEnter'
 hook_add = '''
-  source ~/.config/nvim/plugins/deoplete.vim
+source ~/.config/nvim/plugins/deoplete.vim
 '''
 
 [[plugins]]
 repo = 'lighttiger2505/deoplete-vim-lsp'
+
+[[plugins]]
+repo = 'yuki-yano/fzf-preview.vim'
+rev = 'release/rpc'
+depends=['junegunn/fzf']
+hook_add= '''
+source ~/.config/nvim/plugins/fzf-preview.vim
+'''
+
+[[plugins]]
+repo = 'junegunn/fzf'
+build = './install --all'
+merged = 0
+
+[[plugins]]
+repo = 'Yggdroot/indentLine'
+
+[[plugins]]
+repo = 'vim-airline/vim-airline'
+hook_add = '''
+source ~/.config/nvim/plugins/vim-airline.vim
+'''
+
+[[plugins]]
+repo = 'vim-airline/vim-airline-themes'
+
+[[plugins]]
+repo = 'tpope/vim-fugitive'
+hook_add = '''
+source ~/.config/nvim/plugins/fugitive.vim
+'''
+
+[[plugins]]
+repo = 'airblade/vim-gitgutter'
+hook_add = '''
+source ~/.config/nvim/plugins/gitgutter.vim
+'''
+
+[[plugins]]
+repo = 'jiangmiao/auto-pairs'
+
+[[plugins]]
+repo = 'neoclide/coc.nvim'
+merged = 0
+rev = 'release'
+hook_add = '''
+source ~/.config/nvim/plugins/coc.vim
+'''
+
+[[plugins]]
+repo = 'skanehira/denops-germanium.vim'
+depends = ['denops.vim']
+hook_add = '''
+source ~/.config/nvim/plugins/denops-germanium.vim
+'''
+
+[[plugins]]
+repo = 'vim-denops/denops.vim'

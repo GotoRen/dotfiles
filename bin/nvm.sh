@@ -13,6 +13,7 @@ nvm list
 
 packages=(
   jest
+  neovim
   typescript
   vue-cli
   yarn

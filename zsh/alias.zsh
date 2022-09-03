@@ -10,6 +10,7 @@ alias ...='cd ../../'
 alias ....='cd ../../../'
 alias ll='exa --icons -la -T --git --color=always --time-style=long-iso -L 1'
 alias c='clear'
+alias vim='nvim'
 
 alias lg='lazygit'
 alias ga='git add'
