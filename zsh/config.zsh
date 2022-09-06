@@ -1,11 +1,11 @@
 ####################################################
 ### version control
 ####################################################
-### asdf
+# asdf
 # . /usr/local/opt/asdf/libexec/asdf.sh
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
 
-### nvm
+# nvm
 source $(brew --prefix nvm)/nvm.sh
 
 ####################################################
@@ -19,21 +19,30 @@ export LS_COLORS='di=36:fi=37:ln=35:so=32:pi=33:ex=31:bd=36;01:cd=33;01:su=31;40
 ####################################################
 ### tools
 ####################################################
+# starship
 eval "$(starship init zsh)"
 
+# direnv
 eval "$(direnv hook zsh)"
 export DIRENV_WARN_TIMEOUT=50s
 
+# aws
 export AWS_PROFILE=awsGeneral-1
 
+# gcp
 # source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
 # source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
 source '/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
 source '/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
 export USE_GKE_GCLOUD_AUTH_PLUGIN=True
 
+# k8s
 export PATH="${PATH}:${HOME}/.krew/bin"
 export KUBECTL_EXTERNAL_DIFF="dyff between --omit-header --set-exit-code"
 source <(kubectl completion zsh)
 source <(kustomize completion zsh)
 source <(helm completion zsh)
+
+# golang
+export GOPATH=$HOME/go;
+export PATH=$PATH:$GOPATH/bin;

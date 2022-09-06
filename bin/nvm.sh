@@ -12,6 +12,7 @@ fi
 nvm list
 
 packages=(
+  express
   jest
   neovim
   typescript

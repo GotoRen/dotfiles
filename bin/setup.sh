@@ -17,6 +17,6 @@ sh $DOTPATH/bin/nvm.sh
 sh $DOTPATH/bin/gcloud.sh
 
 sh $DOTPATH/bin/vscode/vscode.sh
-sh $DOTPATH/vim/dein.sh
+sh $DOTPATH/nvim/dein.sh
 
 sh $DOTPATH/bin/ln.sh

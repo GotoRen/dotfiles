@@ -1,5 +1,5 @@
 # dotfiles
-A set of vim, zsh, git, and tmux configuration files.
+A set of zsh, git, neovim and tmux configuration files.
 
 ![GitHub Repo stars](https://img.shields.io/github/stars/GotoRen/dotfiles?style=social)
 ![GitHub](https://img.shields.io/github/license/GotoRen/dotfiles?style=plastic)

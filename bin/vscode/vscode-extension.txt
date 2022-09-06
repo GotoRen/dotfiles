@@ -1,5 +1,6 @@
 adpyke.vscode-sql-formatter
 alexcvzz.vscode-sqlite
+Arjun.swagger-viewer
 aswinkumar863.smarty-template-support
 bierner.markdown-preview-github-styles
 bmewburn.vscode-intelephense-client
@@ -8,6 +9,7 @@ bungcip.better-toml
 ChakrounAnas.turbo-console-log
 cstrap.flask-snippets
 donovan.vscode-terraform
+DotJoshJohnson.xml
 dunstontc.viml
 dunstontc.vscode-go-syntax
 EditorConfig.EditorConfig
@@ -15,6 +17,7 @@ eightHundreds.vscode-drawio
 esbenp.prettier-vscode
 formulahendry.auto-close-tag
 formulahendry.auto-rename-tag
+geeksharp.openssl-configuration-file
 glenn2223.live-sass
 golang.go
 hashicorp.terraform
@@ -49,6 +52,7 @@ tialki.tex-preview
 travnsam.vscode-stm32cube-configurator
 vmsynkov.colonize
 vscode-icons-team.vscode-icons
+Vue.volar
 wayou.vscode-icons-mac
 wholroyd.jinja
 xabikos.JavaScriptSnippets
@@ -56,3 +60,4 @@ xshrim.txt-syntax
 youngjuning.yarn-lock-preview
 yzane.markdown-pdf
 zaaack.markdown-editor
+zxh404.vscode-proto3
