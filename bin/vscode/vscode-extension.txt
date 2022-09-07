@@ -46,6 +46,7 @@ mtxr.sqltools-driver-sqlite
 qwtel.sqlite-viewer
 redhat.vscode-yaml
 rohit-chouhan.sqlite-snippet
+streetsidesoftware.hunspell
 styled-components.vscode-styled-components
 syler.sass-indented
 tialki.tex-preview

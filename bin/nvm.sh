@@ -12,6 +12,7 @@ fi
 nvm list
 
 packages=(
+  docsify-cli
   express
   jest
   neovim
@@ -22,7 +23,7 @@ packages=(
 
 echo "Running nvm install packages..."
 for package in "${packages[@]}"; do
-  npm install -g ${package}
+  npm install --global ${package}
 done
 
-npm list -g
+npm list --global

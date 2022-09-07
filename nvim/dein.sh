@@ -11,5 +11,5 @@ sh $HOME/installer.sh $HOME/.cache/dein
 rm $HOME/installer.sh
 
 if [[ ! -f $HOME/.config/nvim ]]; then
-  mkdir -p $HOME/.config/nvim
+  mkdir -p $HOME/.config/nvim/plugins
 fi

@@ -15,7 +15,6 @@
   "npm.exclude": "",
   "explorer.confirmDelete": false,
   "vsicons.dontShowNewVersionMessage": true,
-  "window.zoomLevel": 1,
 
   // Latex
   "latex-workshop.latex.tools": [
@@ -208,5 +207,6 @@
   // SQLite
   "workbench.editorAssociations": {
     "*.sqlite": "default"
-  }
+  },
+  "window.zoomLevel": 1
 }
