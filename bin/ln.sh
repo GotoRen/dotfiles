@@ -20,7 +20,7 @@ ls -a $VIMPATH/plugins | grep -Ev "\.$" | while read f; do
 done
 
 ### special files.
-ls -a $DOTPATH | grep -Ev "README|bin|nvim|\zsh$|vscode|\.$|^\.git$|Brewfile|LICENSE|Makefile" | while read f; do
+ls -a $DOTPATH | grep -Ev "README|bin|nvim|\zsh$|vscode|\.$|^\.git$|iterm|Brewfile|LICENSE|Makefile" | while read f; do
   if [ $f = ".ssh_config"  ]; then
     sudo ln -snfv $DOTPATH/$f $HOME/.ssh/config
   elif [ $f = "starship.toml"  ]; then
