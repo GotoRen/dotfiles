@@ -156,6 +156,7 @@
     "editor.tabSize": 2,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "json.schemas": [],
 
   // PHP
   "[php]": {

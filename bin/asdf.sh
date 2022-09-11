@@ -2,6 +2,7 @@
 
 tools=(
   aks-engine
+  ansible-base
   argo
   argocd
   awscli
@@ -35,6 +36,9 @@ tools=(
   kubie
   kustomize
   minikube
+  mongo-tools
+  mongodb
+  mysql
   php
   pre-commit
   python
@@ -42,13 +46,12 @@ tools=(
   rust
   sops
   sopstool
+  sqlite
   terraform
   terraform-docs
   terraform-ls
   yq
 )
-
-# echo "\n. $(brew --prefix asdf)/libexec/asdf.sh" >>${ZDOTDIR:-~}/.zshrc
 
 echo "Running asdf install tools..."
 for tool in "${tools[@]}"; do
