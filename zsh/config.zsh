@@ -2,7 +2,6 @@
 ### version control
 ####################################################
 # asdf
-# . /usr/local/opt/asdf/libexec/asdf.sh
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
 
 # nvm
@@ -30,8 +29,6 @@ export DIRENV_WARN_TIMEOUT=50s
 export AWS_PROFILE=awsGeneral-1
 
 # gcp
-# source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
-# source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
 source '/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
 source '/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
 export USE_GKE_GCLOUD_AUTH_PLUGIN=True

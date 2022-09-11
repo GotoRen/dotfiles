@@ -1,9 +1,9 @@
 #!/bin/bash -e
 
-DOTPATH="${HOME}/dotfiles"
-BINPATH="${DOTPATH}/bin"
-VIMPATH="${DOTPATH}/nvim"
-VSCODEPATH="${BINPATH}/vscode"
+DOTPATH=$HOME/dotfiles
+BINPATH=$DOTPATH/bin
+VIMPATH=$DOTPATH/nvim
+VSCODEPATH=$BINPATH/vscode
 
 ### /bin/vscode
 ls -a $VSCODEPATH | grep -E ".json" | while read f; do

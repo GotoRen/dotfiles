@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-DOTPATH=~/dotfiles
+DOTPATH=$HOME/dotfiles
 
 ################################################
 ### Must not change the order of execution!! ###

@@ -1,5 +1,8 @@
 #!/bin/bash -eu
 
+DOTPATH=$HOME/dotfiles
+ZSHPATH=$DOTPATH/zsh
+
 ################################################################################################################
 # This section manages architecture dependent configuration files.
 
@@ -18,18 +21,20 @@ BREW_ARIAS_X86_64_PATH='alias brew="PATH=/usr/local/bin:/usr/bin:/bin:/usr/local
 
 function ConfigurePathsForMultiArchitecture() {
   ### asdf
-  sed -i.tmp -e s%"$1"%"$2"%g sample.md; rm *.tmp
+  sed -i.tmp -e s%"$1"%"$2"%g $ZSHPATH/config.zsh; rm $ZSHPATH/*.tmp
 
   ### google-cloud-sdk
-  sed -i.tmp -e s%"$1"%"$2"%g sample.md; rm *.tmp
-  sed -i.tmp -e s%"$1"%"$2"%g sample.md; rm *.tmp
+  sed -i.tmp -e s%"$1"%"$2"%g $ZSHPATH/config.zsh; rm $ZSHPATH/*.tmp
+  sed -i.tmp -e s%"$1"%"$2"%g $ZSHPATH/config.zsh; rm $ZSHPATH/*.tmp
 
   ### brew alias
-  sed -i.tmp -e s%"$1"%"$2"%g sample.md; rm *.tmp
+  sed -i.tmp -e s%"$1"%"$2"%g $ZSHPATH/alias.zsh; rm $ZSHPATH/*.tmp
 }
 
+############################################
+###                 main                 ###
+############################################
 
-### main section. ###
 if [[ "$(uname -m)" == x86_64 ]]; then
     echo "You used Intel Chips."
     ### asdf
@@ -43,7 +48,6 @@ if [[ "$(uname -m)" == x86_64 ]]; then
     ConfigurePathsForMultiArchitecture "${BREW_ARIAS_ARM_PATH}" "${BREW_ARIAS_X86_64_PATH}"
   elif [[ "$(uname -m)" == arm64 ]]; then
     echo "You used Apple Silicon."
-    ################################################################
     ### asdf
     ConfigurePathsForMultiArchitecture "${ASDF_X86_64_PATH}" "${ASDF_ARM_PATH}"
 
@@ -53,7 +57,6 @@ if [[ "$(uname -m)" == x86_64 ]]; then
 
     ### brew alias
     ConfigurePathsForMultiArchitecture "${BREW_ARIAS_X86_64_PATH}" "${BREW_ARIAS_ARM_PATH}"
-    ################################################################
   else
     _error "Not supported OS. [${uname -m}]"
     exit 1
