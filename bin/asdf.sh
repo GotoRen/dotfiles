@@ -7,7 +7,6 @@ tools=(
   argocd
   awscli
   direnv
-  dyff
   eksctl
   fd
   flutter
