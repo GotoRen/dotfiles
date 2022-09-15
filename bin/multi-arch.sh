@@ -15,6 +15,9 @@ GSDK_ZSH_X86_64_PATH="source '/usr/local/Caskroom/google-cloud-sdk/latest/google
 GSDK_COMPLETTION_ARM_PATH="source '/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'"
 GSDK_COMPLETTION_X86_64_PATH="source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'"
 
+KUBE_PS1_ARM_PATH="'/opt/homebrew/opt/kube-ps1/share/kube-ps1.sh'"
+KUBE_PS1_X86_64_PATH="'/usr/local/opt/kube-ps1/share/kube-ps1.sh'"
+
 BREW_ARIAS_ARM_PATH='alias brew="PATH=/opt/homebrew/bin:/usr/bin:/bin:/opt/homebrew/sbin:/usr/sbin:/sbin brew"'
 BREW_ARIAS_X86_64_PATH='alias brew="PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin brew"'
 ################################################################################################################
@@ -44,6 +47,9 @@ if [[ "$(uname -m)" == x86_64 ]]; then
     ConfigurePathsForMultiArchitecture "${GSDK_ZSH_ARM_PATH}" "${GSDK_ZSH_X86_64_PATH}"
     ConfigurePathsForMultiArchitecture "${GSDK_COMPLETTION_ARM_PATH}" "${GSDK_COMPLETTION_X86_64_PATH}"
 
+    ### kube-ps1
+    ConfigurePathsForMultiArchitecture "${KUBE_PS1_ARM_PATH}" "${KUBE_PS1_X86_64_PATH}"
+
     ### brew alias
     ConfigurePathsForMultiArchitecture "${BREW_ARIAS_ARM_PATH}" "${BREW_ARIAS_X86_64_PATH}"
   elif [[ "$(uname -m)" == arm64 ]]; then
@@ -54,6 +60,9 @@ if [[ "$(uname -m)" == x86_64 ]]; then
     ### google-cloud-sdk
     ConfigurePathsForMultiArchitecture "${GSDK_ZSH_X86_64_PATH}" "${GSDK_ZSH_ARM_PATH}"
     ConfigurePathsForMultiArchitecture "${GSDK_COMPLETTION_X86_64_PATH}" "${GSDK_COMPLETTION_ARM_PATH}"
+
+    ### kube-ps1
+    ConfigurePathsForMultiArchitecture "${KUBE_PS1_X86_64_PATH}" "${KUBE_PS1_ARM_PATH}"
 
     ### brew alias
     ConfigurePathsForMultiArchitecture "${BREW_ARIAS_X86_64_PATH}" "${BREW_ARIAS_ARM_PATH}"

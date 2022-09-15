@@ -31,10 +31,12 @@ alias dc='docker-compose'
 alias didown='docker system prune --all'
 alias dvdown='docker volume prune'
 
-alias al='asdf plugin list all'
 alias k='kubectl'
+alias kon='kubeon'
+alias koff='kubeoff'
 alias h='helm'
 
+alias al='asdf plugin list all'
 alias listen='lsof -i -P'
 alias gcp='gcloud'
 alias tf='terraform'
