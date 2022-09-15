@@ -62,4 +62,4 @@ for tool in "${tools[@]}"; do
   fi
 done
 
-asdf update
+asdf plugin update --all
