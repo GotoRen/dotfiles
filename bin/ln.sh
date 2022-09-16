@@ -9,7 +9,7 @@ VSCODEPATH=$BINPATH/vscode
 ls -a $VSCODEPATH | grep -E ".json" | while read f; do
   ln -snfv $VSCODEPATH/$f $HOME/Library/Application\ Support/Code/User/$f
 done
-ln -snfv $VSCODEPATH/md-preview.css $HOME/.vscode/extensions/bierner.markdown-preview-github-styles-1.0.1/dist/base.css
+ln -snfv $VSCODEPATH/md-preview.css $HOME/.vscode/extensions/bierner.markdown-preview-github-styles-0.2.0/base.css
 
 ### /nvim
 ls -a $VIMPATH | grep -Ev "\.$|.sh|plugins" | while read f; do

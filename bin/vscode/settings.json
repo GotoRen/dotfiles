@@ -15,6 +15,7 @@
   "npm.exclude": "",
   "explorer.confirmDelete": false,
   "vsicons.dontShowNewVersionMessage": true,
+  "window.zoomLevel": 1,
 
   // Latex
   "latex-workshop.latex.tools": [
@@ -209,5 +210,9 @@
   "workbench.editorAssociations": {
     "*.sqlite": "default"
   },
-  "window.zoomLevel": 1
+
+  // Kubernetes
+  "vs-kubernetes": {
+    "vscode-kubernetes.minikube-path.mac": "/Users/ren.goto/.vs-kubernetes/tools/minikube/darwin-arm64/minikube"
+  }
 }
