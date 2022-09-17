@@ -6,6 +6,9 @@ all: install
 install: ## Set dotfiles at the home directory
 	bash -c "$(curl -L https://raw.githubusercontent.com/GotoRen/dotfiles/master/bin/install.sh)"
 
+update:
+	git pull https://github.com/GotoRen/dotfiles.git; make setup
+
 setup: ## Run all bin/shell
 	sh ./bin/setup.sh
 
@@ -26,6 +29,9 @@ go-package: ## Install go packages
 
 nvm-package: ## Install nvm packages
 	sh ./bin/nvm.sh
+
+vscode-conf: ## VSCode settings
+	sh ./bin/vscode/vscode.sh
 
 
 # Files for each environment

@@ -1,4 +1,4 @@
-### https://raw.githubusercontent.com/github/gitignore/main/Global/macOS.gitignore
+### macOS.gitignore
 # General
 .DS_Store
 .AppleDouble
@@ -28,9 +28,11 @@ Temporary Items
 
 
 
-### https://raw.githubusercontent.com/github/gitignore/main/Global/Linux.gitignore
+### Linux.gitignore
 *~
 *.swp
+*.bak
+*.tmp
 
 # temporary files which can be created if a process still has a handle open of a deleted file
 .fuse_hidden*

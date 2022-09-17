@@ -42,12 +42,14 @@ ms-toolsai.jupyter-renderers@1.0.9
 ms-vscode-remote.remote-containers@0.251.0
 ms-vscode.cpptools@1.12.4
 ms-vsliveshare.vsliveshare@1.0.5723
-mtxr.sqltools@0.25.0
+mtxr.sqltools@0.25.1
 mtxr.sqltools-driver-sqlite@0.4.0
 Okteto.kubernetes-context@0.1.0
+plex.vscode-regolint@0.2.0
 qwtel.sqlite-viewer@0.1.5
 redhat.vscode-yaml@1.10.1
 rohit-chouhan.sqlite-snippet@2.0.1
+sdras.vue-vscode-snippets@3.1.1
 streetsidesoftware.hunspell@1.0.0
 styled-components.vscode-styled-components@1.7.4
 syler.sass-indented@1.8.22

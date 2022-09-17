@@ -22,7 +22,7 @@ done
 ### special files.
 ls -a $DOTPATH | grep -Ev "README|bin|nvim|\zsh$|vscode|\.$|^\.git$|iterm|Brewfile|LICENSE|Makefile" | while read f; do
   if [ $f = ".ssh_config"  ]; then
-    sudo ln -snfv $DOTPATH/$f $HOME/.ssh/config
+    sudo ln -sv $DOTPATH/$f $HOME/.ssh/config
   elif [ $f = "starship.toml"  ]; then
     sudo ln -snfv $DOTPATH/$f $HOME/.config/$f
   else
