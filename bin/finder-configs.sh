@@ -4,6 +4,18 @@ OS_NAME="$(uname | awk '{print tolower($0)}')"
 OS_FULL="$(uname -a)"
 OS_TYPE=
 
+localizes=(
+  Applications
+  Documents
+  Downloads
+  Library
+  Movies
+  Music
+  Pictures
+  Public
+  Desktop
+)
+
 if [ "${OS_NAME}" == "linux" ]; then
   if [ $(echo "${OS_FULL}" | grep -c "amzn1") -gt 0 ]; then
     OS_TYPE="yum"
@@ -27,6 +39,7 @@ elif [ "${OS_NAME}" == "darwin" ]; then
   OS_TYPE="brew"
 fi
 
+
 ### Slash directory.
 function SlashDirectory() {
   if [ -n "$(ls /$1$2.localized 2> /dev/null)" ]; then
@@ -36,18 +49,6 @@ function SlashDirectory() {
 }
 
 if [ "${OS_TYPE}" == "brew" ]; then
-
-  localizes=(
-    Applications
-    Documents
-    Downloads
-    Library
-    Movies
-    Music
-    Pictures
-    Public
-    Desktop
-  )
   
   echo "Running delete .localized end .DS_Store ..."
   

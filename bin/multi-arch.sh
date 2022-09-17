@@ -29,6 +29,7 @@ elif [ "${OS_NAME}" == "darwin" ]; then
   OS_TYPE="brew"
 fi
 
+
 function ConfigurePathsForMultiArchitecture() {
   ### config.zsh
   sed -i ''  s%"$1"%"$2"%g $ZSHPATH/config.zsh
