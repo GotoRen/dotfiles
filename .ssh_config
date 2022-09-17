@@ -1,17 +1,9 @@
-# --- Global setting for macOS  ----------
 Host *
         AddKeysToAgent yes
         UseKeychain yes
-# ----------------------------------------
 
-# -------------------------------------------------------- #
-# ####################### mydevice ####################### #
-# -------------------------------------------------------- #
-
-# --- GitHub ---
 Host github.com
         HostName github.com
         User git
         Port 22
         IdentityFile ~/.ssh/git_id_rsa
-# ---------------

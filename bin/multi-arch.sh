@@ -30,15 +30,11 @@ elif [ "${OS_NAME}" == "darwin" ]; then
 fi
 
 function ConfigurePathsForMultiArchitecture() {
-  ### asdf
-  sed -i.tmp -e s%"$1"%"$2"%g $ZSHPATH/config.zsh; rm $ZSHPATH/*.tmp
+  ### config.zsh
+  sed -i ''  s%"$1"%"$2"%g $ZSHPATH/config.zsh
 
-  ### google-cloud-sdk
-  sed -i.tmp -e s%"$1"%"$2"%g $ZSHPATH/config.zsh; rm $ZSHPATH/*.tmp
-  sed -i.tmp -e s%"$1"%"$2"%g $ZSHPATH/config.zsh; rm $ZSHPATH/*.tmp
-
-  ### brew alias
-  sed -i.tmp -e s%"$1"%"$2"%g $ZSHPATH/alias.zsh; rm $ZSHPATH/*.tmp
+  ### alias.zsh
+  sed -i ''  s%"$1"%"$2"%g $ZSHPATH/alias.zsh
 }
 
 ################################################################################################################
