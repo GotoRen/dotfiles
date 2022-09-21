@@ -46,6 +46,7 @@ tools=(
   sops
   sopstool
   sqlite
+  stern
   terraform
   terraform-docs
   terraform-ls

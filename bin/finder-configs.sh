@@ -63,6 +63,7 @@ if [ "${OS_TYPE}" == "brew" ]; then
 
   SlashDirectory "Applications/"
   SlashDirectory "Library/"
+  SlashDirectory "Users/"
   SlashDirectory "Applications/" "Utilities/"
   
   defaults write com.apple.finder AppleShowAllFiles TRUE # Show hidden files.
