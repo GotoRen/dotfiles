@@ -50,6 +50,7 @@ tools=(
   terraform
   terraform-docs
   terraform-ls
+  tflint
   yq
 )
 

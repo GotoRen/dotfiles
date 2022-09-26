@@ -4,7 +4,7 @@ all: install
 # All
 #===============================================================
 install: ## Set dotfiles at the home directory
-	bash -c "$(curl -L https://raw.githubusercontent.com/GotoRen/dotfiles/master/bin/install.sh)"
+	bash -c "$$(curl -L https://raw.githubusercontent.com/GotoRen/dotfiles/master/bin/install.sh)"
 
 update:
 	git pull https://github.com/GotoRen/dotfiles.git; make setup
