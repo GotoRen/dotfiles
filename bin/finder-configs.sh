@@ -65,6 +65,7 @@ if [ "${OS_TYPE}" == "brew" ]; then
   SlashDirectory "Library/"
   SlashDirectory "Users/"
   SlashDirectory "Applications/" "Utilities/"
+  SlashDirectory "Library/" "Compositions/"
   
   defaults write com.apple.finder AppleShowAllFiles TRUE # Show hidden files.
   defaults write com.apple.desktopservices DSDontWriteNetworkStores True # Do not generate .DS_Store.

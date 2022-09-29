@@ -22,6 +22,7 @@ alias gp='git push'
 alias gc='git clone'
 alias gb='git branch'
 alias gh='git checkout'
+alias gr='git reset --soft HEAD^'
 
 alias dp='docker ps'
 alias di='docker images'

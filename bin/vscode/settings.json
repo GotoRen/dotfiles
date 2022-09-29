@@ -212,6 +212,20 @@
 
   // Kubernetes
   "vs-kubernetes": {
-    "vscode-kubernetes.minikube-path.mac": "/Users/ren.goto/.vs-kubernetes/tools/minikube/darwin-arm64/minikube"
+    "vscode-kubernetes.minikube-path.mac": "/Users/ren.goto/.vs-kubernetes/tools/minikube/darwin-arm64/minikube",
+    "vscode-kubernetes.kubectl-path.mac": "/Users/ren.goto/.vs-kubernetes/tools/kubectl/kubectl"
+  },
+
+  // C/C++
+  "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+  "code-runner.runInTerminal": true,
+  "cmake.configureOnOpen": true,
+  "[c]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools",
+    "editor.formatOnSave": true
+  },
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools",
+    "editor.formatOnSave": true
   }
 }
