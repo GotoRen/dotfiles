@@ -212,8 +212,8 @@
 
   // Kubernetes
   "vs-kubernetes": {
-    "vscode-kubernetes.minikube-path.mac": "/Users/ren.goto/.vs-kubernetes/tools/minikube/darwin-arm64/minikube",
-    "vscode-kubernetes.kubectl-path.mac": "/Users/ren.goto/.vs-kubernetes/tools/kubectl/kubectl"
+    "vscode-kubernetes.minikube-path.mac": "/Users/ren/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
+    "vscode-kubernetes.kubectl-path.mac": "/Users/ren/.vs-kubernetes/tools/kubectl/kubectl"
   },
 
   // C/C++

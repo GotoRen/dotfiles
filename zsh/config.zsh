@@ -2,7 +2,7 @@
 ### version control
 ####################################################
 # asdf
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
+. /usr/local/opt/asdf/libexec/asdf.sh
 
 # nvm
 source $(brew --prefix nvm)/nvm.sh
@@ -29,8 +29,8 @@ export DIRENV_WARN_TIMEOUT=50s
 export AWS_PROFILE=awsGeneral-1
 
 # gcp
-source '/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
-source '/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
 export USE_GKE_GCLOUD_AUTH_PLUGIN=True
 
 # k8s
@@ -39,9 +39,12 @@ export KUBECTL_EXTERNAL_DIFF="dyff between --omit-header --set-exit-code"
 source <(kubectl completion zsh)
 source <(kustomize completion zsh)
 source <(helm completion zsh)
-source '/opt/homebrew/opt/kube-ps1/share/kube-ps1.sh'
+source '/usr/local/opt/kube-ps1/share/kube-ps1.sh'
 PS1='$(kube_ps1)'$PS1
 
 # golang
 export GOPATH=$HOME/go;
 export PATH=$PATH:$GOPATH/bin;
+
+# openssl
+export PATH=/usr/local/Cellar/openssl@3/3.0.5/bin:$PATH
