@@ -4,6 +4,7 @@ DOTPATH=$HOME/dotfiles
 BINPATH=$DOTPATH/bin
 VIMPATH=$DOTPATH/nvim
 VSCODEPATH=$BINPATH/vscode
+SSH_PATH=$HOME/.ssh
 
 ### /bin/vscode
 ls -a $VSCODEPATH | grep -E ".json" | while read f; do
@@ -22,7 +23,11 @@ done
 ### special files.
 ls -a $DOTPATH | grep -Ev "README|bin|nvim|\zsh$|vscode|\.$|^\.git$|iterm|Brewfile|LICENSE|Makefile" | while read f; do
   if [ $f = ".ssh_config"  ]; then
-    sudo ln -sv $DOTPATH/$f $HOME/.ssh/config
+    if [ ! -d $SSH_PATH ]; then
+      echo "🔨 Cleate .ssh directory."
+      mkdir $SSH_PATH
+    fi
+    sudo ln -sv $DOTPATH/$f $SSH_PATH/config
   elif [ $f = "starship.toml"  ]; then
     sudo ln -snfv $DOTPATH/$f $HOME/.config/$f
   else
