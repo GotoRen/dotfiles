@@ -1410,7 +1410,7 @@
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
-			<real>0.38628319273603723</real>
+			<real>0.30964268718274113</real>
 			<key>Underline Color</key>
 			<dict>
 				<key>Alpha Component</key>
