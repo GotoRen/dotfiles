@@ -8,3 +8,65 @@ Host github.com
         Port 22
         IdentityFile ~/.ssh/git_id_rsa
         IdentitiesOnly=yes
+
+Host raspberrypi
+        HostName 192.168.11.4
+        User pi
+        Port 22
+        IdentityFile ~/.ssh/raspberrypi_id_rsa
+        IdentitiesOnly=yes
+
+Host pluslab-vpn
+        HostName vpn.pluslab.org
+        User pluslab
+        Port 55555
+        IdentityFile ~/.ssh/pluslab-vpn_id_rsa
+        IdentitiesOnly=yes
+
+Host pluslab-vpn2
+        HostName vpn2.pluslab.org
+        User pluslab
+        Port 55555
+        IdentityFile ~/.ssh/pluslab-vpn2_id_rsa
+        IdentitiesOnly=yes
+
+Host pluslab-sss
+        HostName 10.0.3.150
+        User ren
+        Port 22
+        IdentityFile ~/.ssh/pluslab-humidai
+        IdentitiesOnly=yes
+
+Host suzuka
+        HostName 10.0.3.151
+        User ren
+        Port 22
+        IdentityFile ~/.ssh/cypada_id_rsa
+        IdentitiesOnly=yes
+
+Host suzuka
+        HostName 10.0.3.151
+        User ren
+        Port 22
+        IdentityFile ~/.ssh/cypada_id_rsa
+        IdentitiesOnly=yes
+
+Host venus
+        HostName 10.10.10.35
+        User venus
+        Port 22
+        IdentityFile ~/.ssh/cypada_id_rsa
+        IdentitiesOnly=yes
+
+Host cyp-adapter
+        HostName 10.0.3.10
+        User pi
+        Port 22
+        IdentityFile ~/.ssh/cypada_id_rsa
+        IdentitiesOnly=yes
+
+Host ujiie
+        HostName 10.0.3.72
+        User ujiie
+        Port 22
+        IdentitiesOnly=yes
