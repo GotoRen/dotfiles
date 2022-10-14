@@ -42,14 +42,14 @@ if [ "${OS_NAME}" == "darwin" ]; then
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     if [[ "$(uname -m)" == arm64 ]]; then
       # M1
-      eval "$(/opt/homebrew/bin/brew shellenv)" 
+      eval "$(/opt/homebrew/bin/brew shellenv)"
     else
       # x86/x64
-      eval "$(/usr/local/bin/brew shellenv)"    
+      eval "$(/usr/local/bin/brew shellenv)"
     fi
   fi
   OS='Mac'
-  cd $DOTFILES
+  cd ${DOTFILES}
   brew bundle
   brew bundle check
   brew update
@@ -67,7 +67,7 @@ elif [ "${OS_NAME}" == "linux" ]; then
     fi
   fi
   OS='Linux'
-  cd $DOTFILES
+  cd ${DOTFILES}
   brew bundle
   brew bundle check
   brew update

@@ -19,3 +19,5 @@
 	sslVerify = true
 [safe]
 	directory = $HOME/dotfiles
+[diff "sopsdiffer"]
+	textconv = sops -d

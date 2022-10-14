@@ -54,12 +54,12 @@ tools=(
   yq
 )
 
-echo "Running asdf install tools..."
+echo "\\n🏃 Running asdf install tools..."
 for tool in "${tools[@]}"; do
   asdf plugin add ${tool}
   asdf install ${tool} latest
   asdf global ${tool} latest
-  if [ $tool = "direnv" ]; then
+  if [ ${tool} = "direnv" ]; then
     asdf direnv setup --shell bash --version latest
   fi
 done

@@ -5,6 +5,8 @@ SCRIPT_DIR=$(
   pwd
 )
 
+echo "\\n🏃 Running vscode install tools..."
+
 while read line; do
   code --install-extension $line
 done <${SCRIPT_DIR}/vscode-extension.txt

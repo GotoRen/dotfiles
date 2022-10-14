@@ -212,8 +212,8 @@
 
   // Kubernetes
   "vs-kubernetes": {
-    "vscode-kubernetes.minikube-path.mac": "/Users/ren/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
-    "vscode-kubernetes.kubectl-path.mac": "/Users/ren/.vs-kubernetes/tools/kubectl/kubectl"
+    "vscode-kubernetes.minikube-path.mac": "/Users/z.ren.r.goto/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
+    "vscode-kubernetes.kubectl-path.mac": "/Users/z.ren.r.goto/.vs-kubernetes/tools/kubectl/kubectl"
   },
 
   // C/C++
@@ -226,6 +226,13 @@
   },
   "[cpp]": {
     "editor.defaultFormatter": "ms-vscode.cpptools",
+    "editor.formatOnSave": true
+  },
+
+  // ShellScript
+  "[shellscript]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "foxundermoon.shell-format",
     "editor.formatOnSave": true
   }
 }

@@ -2,8 +2,14 @@ Host *
         AddKeysToAgent yes
         UseKeychain yes
 
-Host github.com
+Host git
         HostName github.com
+        User git
+        Port 22
+        IdentityFile ~/.ssh/git_id_rsa
+
+Host gree-git
+        HostName git.gree-dev.net
         User git
         Port 22
         IdentityFile ~/.ssh/git_id_rsa

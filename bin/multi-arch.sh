@@ -1,7 +1,7 @@
 #!/bin/bash -eu
 
-DOTPATH=$HOME/dotfiles
-ZSHPATH=$DOTPATH/zsh
+DOTPATH=${HOME}/dotfiles
+ZSHPATH=${DOTPATH}/zsh
 OS_NAME="$(uname | awk '{print tolower($0)}')"
 OS_FULL="$(uname -a)"
 OS_TYPE=
@@ -29,13 +29,12 @@ elif [ "${OS_NAME}" == "darwin" ]; then
   OS_TYPE="brew"
 fi
 
-
 function ConfigurePathsForMultiArchitecture() {
   ### config.zsh
-  sed -i ''  s%"$1"%"$2"%g $ZSHPATH/config.zsh
+  sed -i '' s%"$1"%"$2"%g ${ZSHPATH}/config.zsh
 
   ### alias.zsh
-  sed -i ''  s%"$1"%"$2"%g $ZSHPATH/alias.zsh
+  sed -i '' s%"$1"%"$2"%g ${ZSHPATH}/alias.zsh
 }
 
 ################################################################################################################
@@ -59,7 +58,7 @@ BREW_ARIAS_X86_64_PATH='alias brew="PATH=/usr/local/bin:/usr/bin:/bin:/usr/local
 BREW_OPENSSL_ARM_PATH="export PATH=/opt/homebrew/Cellar/openssl@3/3.0.5/bin:\$PATH"
 BREW_OPENSSL_X86_64_PATH="export PATH=/usr/local/Cellar/openssl@3/3.0.5/bin:\$PATH"
 ################################################################################################################
-  
+
 if [ "${OS_TYPE}" == "brew" ]; then
 
   if [[ "$(uname -m)" == x86_64 ]]; then
@@ -68,42 +67,42 @@ if [ "${OS_TYPE}" == "brew" ]; then
 
     ### asdf
     ConfigurePathsForMultiArchitecture "${ASDF_ARM_PATH}" "${ASDF_X86_64_PATH}"
-  
+
     ### google-cloud-sdk
     ConfigurePathsForMultiArchitecture "${GSDK_ZSH_ARM_PATH}" "${GSDK_ZSH_X86_64_PATH}"
     ConfigurePathsForMultiArchitecture "${GSDK_COMPLETTION_ARM_PATH}" "${GSDK_COMPLETTION_X86_64_PATH}"
-  
+
     ### kube-ps1
     ConfigurePathsForMultiArchitecture "${KUBE_PS1_ARM_PATH}" "${KUBE_PS1_X86_64_PATH}"
-  
+
     ### brew alias
     ConfigurePathsForMultiArchitecture "${BREW_ARIAS_ARM_PATH}" "${BREW_ARIAS_X86_64_PATH}"
 
     ### openssl
     ConfigurePathsForMultiArchitecture "${BREW_OPENSSL_ARM_PATH}" "${BREW_OPENSSL_X86_64_PATH}"
-    
+
   elif [[ "$(uname -m)" == arm64 ]]; then
 
     echo "You used Apple Silicon."
 
     ### asdf
     ConfigurePathsForMultiArchitecture "${ASDF_X86_64_PATH}" "${ASDF_ARM_PATH}"
-  
+
     ### google-cloud-sdk
     ConfigurePathsForMultiArchitecture "${GSDK_ZSH_X86_64_PATH}" "${GSDK_ZSH_ARM_PATH}"
     ConfigurePathsForMultiArchitecture "${GSDK_COMPLETTION_X86_64_PATH}" "${GSDK_COMPLETTION_ARM_PATH}"
-  
+
     ### kube-ps1
     ConfigurePathsForMultiArchitecture "${KUBE_PS1_X86_64_PATH}" "${KUBE_PS1_ARM_PATH}"
-  
+
     ### brew alias
     ConfigurePathsForMultiArchitecture "${BREW_ARIAS_X86_64_PATH}" "${BREW_ARIAS_ARM_PATH}"
 
     ### openssl
-    ConfigurePathsForMultiArchitecture "${BREW_OPENSSL_X86_64_PATH}" "${BREW_OPENSSL_ARM_PATH}" 
+    ConfigurePathsForMultiArchitecture "${BREW_OPENSSL_X86_64_PATH}" "${BREW_OPENSSL_ARM_PATH}"
 
   else
-    _error "Not supported OS. [${uname -m}]"
+    _error "Not supported OS. [${uname-m}]"
     exit 1
   fi
 else
