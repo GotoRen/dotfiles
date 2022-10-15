@@ -5,6 +5,7 @@ BINPATH=${DOTPATH}/bin
 VIMPATH=${DOTPATH}/nvim
 VSCODEPATH=${BINPATH}/vscode
 KARABINER=${BINPATH}/karabiner
+XDG_CONFIG_HOME=${HOME}/.config
 SSH_PATH=${HOME}/.ssh
 
 ### /bin/vscode
@@ -15,15 +16,15 @@ ln -snfv ${VSCODEPATH}/md-preview.css ${HOME}/.vscode/extensions/bierner.markdow
 
 ### /bin/karabiner
 ls -a ${KARABINER} | grep -E ".json" | while read f; do
-  ln -snfv ${KARABINER}/$f ${HOME}/.config/karabiner/$f
+  ln -snfv ${KARABINER}/$f ${XDG_CONFIG_HOME}/karabiner/$f
 done
 
 ### /nvim
 ls -a ${VIMPATH} | grep -Ev "\.$|.sh|plugins" | while read f; do
-  ln -snfv ${VIMPATH}/$f ${HOME}/.config/nvim/$f
+  ln -snfv ${VIMPATH}/$f ${XDG_CONFIG_HOME}/nvim/$f
 done
 ls -a ${VIMPATH}/plugins | grep -Ev "\.$" | while read f; do
-  ln -snfv ${VIMPATH}/plugins/$f ${HOME}/.config/nvim/plugins/$f
+  ln -snfv ${VIMPATH}/plugins/$f ${XDG_CONFIG_HOME}/nvim/plugins/$f
 done
 
 ### special files.
@@ -36,7 +37,7 @@ ls -a ${DOTPATH} | grep -Ev "README|bin|nvim|\zsh$|vscode|\.$|^\.git$|iterm|Brew
     # sudo ln -sv ${DOTPATH}/$f ${SSH_PATH}/config
     sudo cp -nv ${DOTPATH}/$f ${SSH_PATH}/config
   elif [ $f = "starship.toml" ]; then
-    sudo ln -snfv ${DOTPATH}/$f ${HOME}/.config/$f
+    sudo ln -snfv ${DOTPATH}/$f ${XDG_CONFIG_HOME}/$f
   else
     sudo ln -snfv ${DOTPATH}/$f ${HOME}/$f
   fi
