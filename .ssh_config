@@ -7,4 +7,4 @@ Host github.com
         User git
         Port 22
         IdentityFile ~/.ssh/git_id_rsa
-        IdentitiesOnly=yes
+        IdentitiesOnly yes

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DOTPATH=$HOME/dotfiles
+DOTPATH=${HOME}/dotfiles
 GITHUB_URL=https://github.com/GotoRen/dotfiles
 OS_NAME="$(uname | awk '{print tolower($0)}')"
 OS_FULL="$(uname -a)"
@@ -45,10 +45,10 @@ elif [ "${OS_TYPE}" == "yum" ]; then
 fi
 
 if type "git" >/dev/null 2>&1; then
-  if [ -d $DOTPATH ]; then
-    cd $DOTPATH && git pull
+  if [ -d ${DOTPATH} ]; then
+    cd ${DOTPATH} && git pull
   else
-    git clone ${GITHUB_URL}.git $DOTPATH
+    git clone ${GITHUB_URL}.git ${DOTPATH}
   fi
 else
   echo "Install git!"
@@ -56,4 +56,4 @@ else
 fi
 
 ### Then, it performs setup.sh.
-sh $DOTPATH/bin/setup.sh
+sh ${DOTPATH}/bin/setup.sh

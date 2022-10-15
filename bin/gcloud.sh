@@ -4,7 +4,7 @@ plugins=(
   gke-gcloud-auth-plugin
 )
 
-echo "Running gcloud install plugins..."
+echo "\\n🏃 Running gcloud install plugins..."
 for plugin in "${plugins[@]}"; do
   gcloud components install ${plugin}
   ${plugin} --version

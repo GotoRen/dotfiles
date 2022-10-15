@@ -16,7 +16,6 @@ for package in ${packages[@]}; do
   which "$(echo ${package} | rev | awk '{print substr($0, index($0, "@")+1, index($0, "/")-1 -1 )}' | awk '{sub("/.*", ""); print $0;}' | rev)"
 done
 
-
 ### go version < 1.17
 legacy_packages=(
   github.com/oxequa/realize

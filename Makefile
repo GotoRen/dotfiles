@@ -1,6 +1,7 @@
 all: install
 
 
+
 # All
 #===============================================================
 install: ## Set dotfiles at the home directory
@@ -44,6 +45,7 @@ set-ln: ## Configure symbolic link
 
 multi-arch: ## Architecture dependent configuration
 	sh ./bin/multi-arch.sh
+
 
 
 # Makefile config
