@@ -33,7 +33,8 @@ ls -a ${DOTPATH} | grep -Ev "README|bin|nvim|\zsh$|vscode|\.$|^\.git$|iterm|Brew
       echo "🔨 Cleate .ssh directory."
       mkdir ${SSH_PATH}
     fi
-    sudo ln -sv ${DOTPATH}/$f ${SSH_PATH}/config
+    # sudo ln -sv ${DOTPATH}/$f ${SSH_PATH}/config
+    sudo cp -nv ${DOTPATH}/$f ${SSH_PATH}/config
   elif [ $f = "starship.toml" ]; then
     sudo ln -snfv ${DOTPATH}/$f ${HOME}/.config/$f
   else
