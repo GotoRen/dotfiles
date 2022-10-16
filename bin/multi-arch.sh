@@ -102,7 +102,7 @@ if [ "${OS_TYPE}" == "brew" ]; then
     ConfigurePathsForMultiArchitecture "${BREW_OPENSSL_X86_64_PATH}" "${BREW_OPENSSL_ARM_PATH}"
 
   else
-    _error "Not supported OS. [${uname-m}]"
+    _error "Not supported OS. [$(uname -m)]"
     exit 1
   fi
 else

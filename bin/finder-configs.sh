@@ -49,7 +49,7 @@ function SlashDirectory() {
 
 if [ "${OS_TYPE}" == "brew" ]; then
 
-  echo "\\n🏃 Running delete .localized end .DS_Store ..."
+  echo "\\n🏃 Running delete .localized..."
 
   ### Home directory.
   for localize in "${localizes[@]}"; do
@@ -70,6 +70,7 @@ if [ "${OS_TYPE}" == "brew" ]; then
   defaults write com.apple.desktopservices DSDontWriteNetworkStores True # Do not generate .DS_Store.
   killall Finder
 
+  echo "\\n🏃 Running delete .DS_Store ..."
   ### delete all .DS_Store
   sudo find / -name ".DS_Store" -depth -exec rm {} \;
 

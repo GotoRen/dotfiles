@@ -43,8 +43,8 @@ source '/usr/local/opt/kube-ps1/share/kube-ps1.sh'
 PS1='$(kube_ps1)'$PS1
 
 # golang
-export GOPATH=$HOME/go;
-export PATH=$PATH:$GOPATH/bin;
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
 
 # openssl
 export PATH=/usr/local/Cellar/openssl@3/3.0.5/bin:$PATH

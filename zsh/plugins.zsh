@@ -28,7 +28,7 @@ zi light stedolan/jq
 # file output
 zi ice as"command" from"gh-r" mv"bat* -> bat" pick"bat/bat"
 zi light sharkdp/bat
- 
+
 # syntax highlight
 zi light 'zdharma/fast-syntax-highlighting'
 
