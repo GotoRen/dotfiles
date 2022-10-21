@@ -18,6 +18,7 @@ packages=(
   express
   jest
   neovim
+  prometheus-api-metrics
   typescript
   vue-cli
   webpack
