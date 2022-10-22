@@ -106,5 +106,5 @@ if [ "${OS_TYPE}" == "brew" ]; then
     exit 1
   fi
 else
-  echo "Skip this setup phase. [${OS_NAME}]"
+  echo "\\n😇 Skip this setup phase. [${OS_NAME}]\\n"
 fi
