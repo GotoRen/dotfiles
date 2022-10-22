@@ -16,26 +16,26 @@ localizes=(
   Desktop
 )
 
-if [ "${OS_NAME}" == "linux" ]; then
-  if [ $(echo "${OS_FULL}" | grep -c "amzn1") -gt 0 ]; then
+if [ ${OS_NAME} == "linux" ]; then
+  if [ $(echo ${OS_FULL} | grep -c "amzn1") -gt 0 ]; then
     OS_TYPE="yum"
-  elif [ $(echo "${OS_FULL}" | grep -c "amzn2") -gt 0 ]; then
+  elif [ $(echo ${OS_FULL} | grep -c "amzn2") -gt 0 ]; then
     OS_TYPE="yum"
-  elif [ $(echo "${OS_FULL}" | grep -c "el6") -gt 0 ]; then
+  elif [ $(echo ${OS_FULL} | grep -c "el6") -gt 0 ]; then
     OS_TYPE="yum"
-  elif [ $(echo "${OS_FULL}" | grep -c "el7") -gt 0 ]; then
+  elif [ $(echo ${OS_FULL} | grep -c "el7") -gt 0 ]; then
     OS_TYPE="yum"
-  elif [ $(echo "${OS_FULL}" | grep -c "Ubuntu") -gt 0 ]; then
+  elif [ $(echo ${OS_FULL} | grep -c "Ubuntu") -gt 0 ]; then
     OS_TYPE="apt"
-  elif [ $(echo "${OS_FULL}" | grep -c "coreos") -gt 0 ]; then
+  elif [ $(echo ${OS_FULL} | grep -c "coreos") -gt 0 ]; then
     OS_TYPE="apt"
-  elif [ $(echo "${OS_FULL}" | grep -c "microsoft-standard-WSL") -gt 0 ]; then
+  elif [ $(echo ${OS_FULL} | grep -c "microsoft-standard-WSL") -gt 0 ]; then
     # WSL
     if [ $(cat /etc/os-release | grep -c "Ubuntu") -gt 0 ]; then
       OS_TYPE="apt"
     fi
   fi
-elif [ "${OS_NAME}" == "darwin" ]; then
+elif [ ${OS_NAME} == "darwin" ]; then
   OS_TYPE="brew"
 fi
 

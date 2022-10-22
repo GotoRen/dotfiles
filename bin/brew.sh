@@ -9,30 +9,30 @@ DOTFILES="$(
   pwd
 )/.."
 
-if [ "${OS_NAME}" == "linux" ]; then
-  if [ $(echo "${OS_FULL}" | grep -c "amzn1") -gt 0 ]; then
+if [ ${OS_NAME} == "linux" ]; then
+  if [ $(echo ${OS_FULL} | grep -c "amzn1") -gt 0 ]; then
     OS_TYPE="yum"
-  elif [ $(echo "${OS_FULL}" | grep -c "amzn2") -gt 0 ]; then
+  elif [ $(echo ${OS_FULL} | grep -c "amzn2") -gt 0 ]; then
     OS_TYPE="yum"
-  elif [ $(echo "${OS_FULL}" | grep -c "el6") -gt 0 ]; then
+  elif [ $(echo ${OS_FULL} | grep -c "el6") -gt 0 ]; then
     OS_TYPE="yum"
-  elif [ $(echo "${OS_FULL}" | grep -c "el7") -gt 0 ]; then
+  elif [ $(echo ${OS_FULL} | grep -c "el7") -gt 0 ]; then
     OS_TYPE="yum"
-  elif [ $(echo "${OS_FULL}" | grep -c "Ubuntu") -gt 0 ]; then
+  elif [ $(echo ${OS_FULL} | grep -c "Ubuntu") -gt 0 ]; then
     OS_TYPE="apt"
-  elif [ $(echo "${OS_FULL}" | grep -c "coreos") -gt 0 ]; then
+  elif [ $(echo ${OS_FULL} | grep -c "coreos") -gt 0 ]; then
     OS_TYPE="apt"
   fi
-elif [ "${OS_NAME}" == "darwin" ]; then
+elif [ ${OS_NAME} == "darwin" ]; then
   OS_TYPE="brew"
 fi
 
-if [ "${OS_TYPE}" == "" ]; then
+if [ ${OS_TYPE} == "" ]; then
   echo -e "Not supported OS. [${OS_NAME}]"
   exit 1
 fi
 
-if [ "${OS_NAME}" == "darwin" ]; then
+if [ ${OS_NAME} == "darwin" ]; then
   if !(which brew); then
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     if [[ "$(uname -m)" == arm64 ]]; then
@@ -46,7 +46,7 @@ if [ "${OS_NAME}" == "darwin" ]; then
   fi
   OS='Mac'
   cd ${DOTFILES}
-elif [ "${OS_NAME}" == "linux" ]; then
+elif [ ${OS_NAME} == "linux" ]; then
   if !(which brew); then
     if [[ "$(uname -r)" == *microsoft* ]]; then
       echo 'WSL installing Homebrew...'
