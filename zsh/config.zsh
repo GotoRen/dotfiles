@@ -2,7 +2,7 @@
 ### version control
 ####################################################
 # asdf
-. /usr/local/opt/asdf/libexec/asdf.sh
+. /home/linuxbrew/.linuxbrew/Cellar/asdf/0.10.2/libexec/asdf.sh
 
 # nvm
 source $(brew --prefix nvm)/nvm.sh
@@ -29,8 +29,6 @@ export DIRENV_WARN_TIMEOUT=50s
 export AWS_PROFILE=awsGeneral-1
 
 # gcp
-source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
-source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
 export USE_GKE_GCLOUD_AUTH_PLUGIN=True
 
 # k8s
@@ -39,7 +37,7 @@ export KUBECTL_EXTERNAL_DIFF="dyff between --omit-header --set-exit-code"
 source <(kubectl completion zsh)
 source <(kustomize completion zsh)
 source <(helm completion zsh)
-source '/usr/local/opt/kube-ps1/share/kube-ps1.sh'
+source '/home/linuxbrew/.linuxbrew/Cellar/kube-ps1/0.7.0/share/kube-ps1.sh'
 PS1='$(kube_ps1)'$PS1
 
 # golang
