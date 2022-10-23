@@ -6,7 +6,7 @@ OS_NAME="$(uname | awk '{print tolower($0)}')"
 OS_FULL="$(uname -a)"
 OS_TYPE=
 
-if [ ${OS_NAME} == "linux" ]; then
+if [ ${OS_NAME} = "linux" ]; then
   if [ $(echo ${OS_FULL} | grep -c "amzn1") -gt 0 ]; then
     OS_TYPE="yum"
   elif [ $(echo ${OS_FULL} | grep -c "amzn2") -gt 0 ]; then
@@ -25,21 +25,24 @@ if [ ${OS_NAME} == "linux" ]; then
       OS_TYPE="apt"
     fi
   fi
-elif [ ${OS_NAME} == "darwin" ]; then
+elif [ ${OS_NAME} = "darwin" ]; then
   OS_TYPE="brew"
 fi
 
-if [ ${OS_TYPE} == "" ]; then
+if [ ${OS_TYPE} = "" ]; then
   _error "Not supported OS. [${OS_NAME}]"
 fi
 
-if [ ${OS_TYPE} == "brew" ]; then
+if [ ${OS_TYPE} = "brew" ]; then
+  echo "🚀 ⟫⟫⟫ Your environment is macOS."
   xcode-select --install
-elif [ ${OS_TYPE} == "apt" ]; then
+elif [ ${OS_TYPE} = "apt" ]; then
+  echo "🚀 ⟫⟫⟫ Your environment is Debian."
   sudo apt update && sudo apt upgrade -y
   sudo apt install -y build-essential procps curl file git
   sudo dpkg-reconfigure dash # change dash -> bash
-elif [ ${OS_TYPE} == "yum" ]; then
+elif [ ${OS_TYPE} = "yum" ]; then
+  echo "🚀 ⟫⟫⟫ Your environment is RedHat."
   sudo yum groupinstall -y 'Development Tools'
   sudo yum install -y procps-ng curl file git
   sudo yum install -y libxcrypt-compat
