@@ -27,7 +27,7 @@ packages=(
   yarn
 )
 
-echo "\\n🏃 Running nvm install packages..."
+echo -e "\n🏃 Running nvm install packages..."
 for package in "${packages[@]}"; do
   npm install --global ${package}
 done
