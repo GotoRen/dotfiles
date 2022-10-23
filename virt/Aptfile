@@ -1,7 +1,6 @@
 apt-transport-https 
 automake
 build-essential
-build-essential 
 ca-certificates
 curl
 dirmngr 
@@ -28,6 +27,7 @@ neovim
 net-tools
 openssh-server
 procps
+procps 
 terminator
 tightvncserver
 traceroute
@@ -38,3 +38,4 @@ xfce4-goodies
 xfce4-terminal
 xrdp
 zlib1g-dev
+zsh

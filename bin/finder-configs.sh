@@ -75,5 +75,5 @@ if [ ${OS_TYPE} == "brew" ]; then
   sudo find / -name ".DS_Store" -depth -exec rm {} \;
 
 else
-  echo -e "\n😇 Skip this setup phase. [${OS_NAME}]"
+  echo "\\n😇 Skip this setup phase. [${OS_NAME}]"
 fi

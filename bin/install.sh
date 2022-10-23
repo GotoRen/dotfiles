@@ -39,8 +39,10 @@ if [ ${OS_TYPE} = "brew" ]; then
 elif [ ${OS_TYPE} = "apt" ]; then
   echo "🚀 ⟫⟫⟫ Your environment is Debian."
   sudo apt update && sudo apt upgrade -y
-  sudo apt install -y build-essential procps curl file git
-  sudo dpkg-reconfigure dash # change dash -> bash
+  sudo apt install -y build-essential procps curl file git zsh
+  sudo dpkg-reconfigure dash # change shell: dash -> bash
+  ls -l /bin/sh              # /bin/sh -> bash
+  chsh -s $(which zsh)
 elif [ ${OS_TYPE} = "yum" ]; then
   echo "🚀 ⟫⟫⟫ Your environment is RedHat."
   sudo yum groupinstall -y 'Development Tools'
