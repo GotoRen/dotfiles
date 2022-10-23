@@ -16,6 +16,7 @@ libbz2-dev
 libevent-dev
 libffi-dev
 libmysqlcppconn-dev
+libpq-dev
 libreadline-dev
 libsodium-dev
 libsqlite3-dev
@@ -26,6 +27,8 @@ mozc-utils-gui
 neovim
 net-tools
 openssh-server
+postgresql
+postgresql-contrib
 procps
 procps 
 terminator

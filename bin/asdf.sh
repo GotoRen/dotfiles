@@ -21,6 +21,7 @@ tools=(
   helm-docs
   helmfile
   helmsman
+  heroku-cli
   jq
   jsonnet
   k9s
@@ -40,6 +41,7 @@ tools=(
   mongodb
   mysql
   php
+  postgres
   pre-commit
   python
   ruby
