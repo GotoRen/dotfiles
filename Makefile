@@ -1,50 +1,53 @@
-all: install
+BASH=bash
+SHELL=sh
 
 
 
 # All
 #===============================================================
+all: install
+
 install: ## Set dotfiles at the home directory
-	bash -c "$$(curl -L https://raw.githubusercontent.com/GotoRen/dotfiles/master/bin/install.sh)"
+	${BASH} -c "$$(curl -L https://raw.githubusercontent.com/GotoRen/dotfiles/master/bin/install.sh)"
 
 update:
 	git pull https://github.com/GotoRen/dotfiles.git; make setup
 
 setup: ## Run all bin/shell
-	sh ./bin/setup.sh
+	${SHELL} ./bin/setup.sh
 
 
 # Install tools
 #===============================================================
-asdf-plugin: ## Install asdf plugins
-	sh ./bin/asdf.sh
+asdf-install: ## Install asdf plugins
+	${SHELL} ./bin/asdf.sh
 
-brew-formulas: ## Install brew formulas
-	sh ./bin/brew.sh
+brew-install: ## Install brew formulas
+	${SHELL} ./bin/brew.sh
 
-gcloud-plugin: ## Install google-cloud-sdk plugins
-	sh ./bin/gcloud.sh
+gcloud-install: ## Install google-cloud-sdk plugins
+	${SHELL} ./bin/gcloud.sh
 
-go-package: ## Install go packages
-	sh ./bin/go-package.sh
+go-install: ## Install go packages
+	${SHELL} ./bin/go-package.sh
 
-nvm-package: ## Install nvm packages
-	sh ./bin/nvm.sh
+nvm-install: ## Install nvm packages
+	${SHELL} ./bin/nvm.sh
 
-vscode-conf: ## VSCode settings
-	sh ./bin/vscode/vscode.sh
+vscode-install: ## VSCode settings
+	${SHELL} ./bin/vscode/vscode.sh
 
 
 # Files for each environment
 #===============================================================
 finder-conf: ## Remove annoying metafiles
-	sh ./bin/finder-configs.sh
+	${SHELL} ./bin/finder-configs.sh
 
-set-ln: ## Configure symbolic link
-	sh ./bin/ln.sh
+ln-conf: ## Configure symbolic link
+	${SHELL} ./bin/ln.sh
 
-multi-arch: ## Architecture dependent configuration
-	sh ./bin/multi-arch.sh
+arch-conf: ## Architecture dependent configuration
+	${SHELL} ./bin/multi-arch.sh
 
 
 
