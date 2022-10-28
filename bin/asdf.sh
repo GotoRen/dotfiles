@@ -6,6 +6,7 @@ tools=(
   argo
   argocd
   awscli
+  buf
   dart
   direnv
   eksctl
