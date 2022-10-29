@@ -8,6 +8,7 @@ packages=(
   github.com/daichirata/hammer@latest
   github.com/evilmartians/lefthook@latest
   github.com/cosmtrek/air@latest
+  golang.org/x/mobile/cmd/gomobile@latest
 )
 
 echo -e "\n🏃 Running go install packages..."
