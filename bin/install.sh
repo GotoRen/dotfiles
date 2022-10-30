@@ -63,3 +63,4 @@ fi
 
 ### Then, it performs setup.sh.
 sh ${DOTPATH}/bin/setup.sh
+exec $SHELL -l
