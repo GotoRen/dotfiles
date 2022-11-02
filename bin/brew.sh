@@ -28,7 +28,7 @@ elif [ ${OS_NAME} == "darwin" ]; then
 fi
 
 if [ ${OS_TYPE} == "" ]; then
-  echo -e "Not supported OS. [${OS_NAME}]"
+  _error "Not supported OS. [${OS_NAME}]"
   exit 1
 fi
 
@@ -64,7 +64,7 @@ elif [ ${OS_NAME} == "linux" ]; then
   cd ${DOTFILES}
 elif [ "$(expr substr $(uname -s) 1 10)" == 'MINGW32_NT' ]; then
   OS='Cygwin'
-  echo -e "Cygwin is not yet supported."
+  echo "Cygwin is not yet supported."
   exit 1
 else
   echo "Your platform ($(uname -a)) is not supported."

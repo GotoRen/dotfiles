@@ -58,7 +58,7 @@ tools=(
   yq
 )
 
-echo -e "\n🏃 Running asdf install tools..."
+echo "🏃 Running asdf install tools..."
 for tool in "${tools[@]}"; do
   asdf plugin add ${tool}
   asdf install ${tool} latest
