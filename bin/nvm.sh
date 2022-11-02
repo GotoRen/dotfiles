@@ -1,13 +1,15 @@
-#!/bin/bash -e
+#!/bin/bash
 
-export NVM_DIR=${HOME}/.nvm
+NVM_DIR=${HOME}/.nvm
 source ${NVM_DIR}/nvm.sh
 
-if (nvm --version); then
-  nvm install node
-else
+if !(command -v nvm); then
   _error "nvm is not found."
   exit 1
+else
+  echo "😇 nvm already exists."
+  nvm --version
+  nvm install node
 fi
 
 nvm list
@@ -15,7 +17,7 @@ nvm list
 packages=(
   corepack
   docsify-cli
-  express
+  express-generator
   jest
   neovim
   prometheus-api-metrics
