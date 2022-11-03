@@ -31,6 +31,9 @@ gcloud-install: ## Install google-cloud-sdk plugins
 go-install: ## Install go packages
 	${SHELL} ./bin/go-package.sh
 
+gem-install: ## Install gem rakes
+	${SHELL} ./bin/gem-rake.sh
+
 nvm-install: ## Install nvm packages
 	${SHELL} ./bin/nvm.sh
 

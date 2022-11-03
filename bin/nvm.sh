@@ -3,13 +3,13 @@
 NVM_DIR=${HOME}/.nvm
 source ${NVM_DIR}/nvm.sh
 
-if !(command -v nvm); then
-  _error "nvm is not found."
-  exit 1
-else
+if (command -v nvm); then
   echo "😇 nvm already exists."
   nvm --version
   nvm install node
+else
+  _error "nvm is not found."
+  exit 1
 fi
 
 nvm list
@@ -29,7 +29,7 @@ packages=(
   yarn
 )
 
-echo "🏃 Running nvm install packages..."
+echo "🏃 Installing nvm packages in progress ..."
 for package in "${packages[@]}"; do
   npm install --global ${package}
 done

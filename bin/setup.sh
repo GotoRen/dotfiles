@@ -13,6 +13,7 @@ sh ${DOTPATH}/bin/asdf.sh
 sh ${DOTPATH}/bin/nvm.sh
 sh ${DOTPATH}/bin/gcloud.sh
 sh ${DOTPATH}/bin/go-package.sh
+sh ${DOTPATH}/bin/gem-rake.sh
 
 sh ${DOTPATH}/bin/vscode/vscode.sh
 sh ${DOTPATH}/nvim/dein.sh

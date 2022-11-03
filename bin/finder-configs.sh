@@ -49,7 +49,7 @@ function SlashDirectory() {
 
 if [ ${OS_TYPE} == "brew" ]; then
 
-  echo "🏃 Running delete .localized..."
+  echo "🏃 Running delete .localized ..."
 
   ### Home directory.
   for localize in "${localizes[@]}"; do

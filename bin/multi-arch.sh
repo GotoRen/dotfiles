@@ -55,8 +55,8 @@ KUBE_PS1_X86_64_PATH="'/usr/local/opt/kube-ps1/share/kube-ps1.sh'"
 BREW_ARIAS_ARM_PATH='alias brew="PATH=/opt/homebrew/bin:/usr/bin:/bin:/opt/homebrew/sbin:/usr/sbin:/sbin brew"'
 BREW_ARIAS_X86_64_PATH='alias brew="PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin brew"'
 
-BREW_OPENSSL_ARM_PATH="export PATH=/opt/homebrew/Cellar/openssl@3/3.0.5/bin:\$PATH"
-BREW_OPENSSL_X86_64_PATH="export PATH=/usr/local/Cellar/openssl@3/3.0.5/bin:\$PATH"
+BREW_OPENSSL_ARM_PATH="export PATH=/opt/homebrew/Cellar/openssl@3/3.0.7/bin:\$PATH"
+BREW_OPENSSL_X86_64_PATH="export PATH=/usr/local/Cellar/openssl@3/3.0.7/bin:\$PATH"
 ################################################################################################################
 
 if [ "${OS_TYPE}" == "brew" ]; then

@@ -47,4 +47,4 @@ export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
 # openssl
-export PATH=/usr/local/Cellar/openssl@3/3.0.5/bin:$PATH
+export PATH=/usr/local/Cellar/openssl@3/3.0.7/bin:$PATH

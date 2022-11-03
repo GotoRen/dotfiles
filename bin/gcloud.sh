@@ -5,7 +5,7 @@ plugins=(
   config-connector
 )
 
-echo "🏃 Running gcloud install plugins..."
+echo "🏃 Installing gcloud plugins in progress ..."
 for plugin in "${plugins[@]}"; do
   gcloud components install ${plugin}
   ${plugin} --version

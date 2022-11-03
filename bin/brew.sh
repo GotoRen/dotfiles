@@ -49,12 +49,12 @@ if [ ${OS_NAME} == "darwin" ]; then
 elif [ ${OS_NAME} == "linux" ]; then
   if !(which brew); then
     if [[ "$(uname -r)" == *microsoft* ]]; then
-      echo 'WSL installing Homebrew...'
+      echo 'WSL installing Homebrew ...'
       /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
       eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
       which brew
     else
-      echo 'Linux installing Homebrew...'
+      echo 'Linux installing Homebrew ...'
       /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
       eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
       which brew

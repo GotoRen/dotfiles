@@ -234,5 +234,12 @@
     "editor.tabSize": 2,
     "editor.defaultFormatter": "foxundermoon.shell-format",
     "editor.formatOnSave": true
+  },
+
+  // Ruby/Vagrant
+  "[ruby]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "misogi.ruby-rubocop",
+    "editor.formatOnSave": true
   }
 }
