@@ -8,6 +8,7 @@ packages=(
   github.com/daichirata/hammer@latest
   github.com/evilmartians/lefthook@latest
   github.com/cosmtrek/air@latest
+  github.com/google/pprof@latest
   golang.org/x/mobile/cmd/gomobile@latest
 )
 
