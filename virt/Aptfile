@@ -1,11 +1,14 @@
 apt-transport-https
 automake
+bridge-utils
 build-essential
 ca-certificates
 curl
 dirmngr
 dnsutils
+dphys-swapfile
 dpkg-dev
+etcd-client
 file
 fonts-ipaexfont
 g++
@@ -17,6 +20,7 @@ htop
 ifmetric
 ipcalc
 iperf3
+iputils-ping
 libbz2-dev
 libevent-dev
 libffi-dev
@@ -29,11 +33,14 @@ libsodium-dev
 libsqlite3-dev
 libssl-dev
 libtool
+libvirt-clients
+libvirt-daemon
 make
 mono-devel
 mozc-utils-gui
 neovim
 net-tools
+network-manager
 network-manager-l2tp
 network-manager-l2tp-gnome
 openssh-server
@@ -41,6 +48,8 @@ pkg-config
 postgresql
 postgresql-contrib
 procps
+qemu
+qemu-kvm
 qt5-qmake
 qtbase5-dev
 qtbase5-dev-tools
@@ -51,7 +60,10 @@ terminator
 texinfo
 tightvncserver
 traceroute
+vagrant
 vim
+virt-manager
+virtualbox
 wireshark
 xfce4
 xfce4-goodies
