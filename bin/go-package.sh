@@ -21,6 +21,7 @@ done
 ### go version < 1.17
 legacy_packages=(
   github.com/oxequa/realize
+  github.com/tools/godep
 )
 
 echo "🏃 Installing go legacy packages in progress ..."
