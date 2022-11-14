@@ -28,7 +28,7 @@ alias dp='docker ps'
 alias di='docker images'
 alias dn='docker network ls'
 alias dv='docker volume ls'
-alias dc='docker-compose'
+alias dc='docker compose'
 alias didown='docker system prune --all'
 alias dvdown='docker volume prune'
 
