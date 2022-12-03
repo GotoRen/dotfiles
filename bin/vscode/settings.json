@@ -15,6 +15,7 @@
   "npm.exclude": "",
   "explorer.confirmDelete": false,
   "vsicons.dontShowNewVersionMessage": true,
+  "editor.detectIndentation": false,
 
   // Latex
   "latex-workshop.latex.tools": [
@@ -80,6 +81,7 @@
   // Go
   "go.useLanguageServer": true,
   "go.toolsManagement.autoUpdate": true,
+  "go.inferGopath": false,
 
   // HTML
   "[html]": {
@@ -201,6 +203,7 @@
 
   // SQL
   "[sql]": {
+    "editor.tabSize": 2,
     "editor.defaultFormatter": "adpyke.vscode-sql-formatter",
     "editor.formatOnSave": true
   },
