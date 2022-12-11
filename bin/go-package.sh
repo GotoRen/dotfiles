@@ -1,15 +1,18 @@
 #!/bin/bash -e
 
 packages=(
-  github.com/golang/mock/mockgen@latest
   github.com/cloudspannerecosystem/spanner-cli@latest
-  github.com/pressly/goose/v3/cmd/goose@latest
-  github.com/homeport/dyff/cmd/dyff@latest
+  github.com/cosmtrek/air@latest
   github.com/daichirata/hammer@latest
   github.com/evilmartians/lefthook@latest
-  github.com/cosmtrek/air@latest
+  github.com/golang/mock/mockgen@latest
   github.com/google/pprof@latest
+  github.com/homeport/dyff/cmd/dyff@latest
+  github.com/kisielk/errcheck@latest
+  github.com/pressly/goose/v3/cmd/goose@latest
+  mvdan.cc/gofumpt@latest
   golang.org/x/mobile/cmd/gomobile@latest
+  golang.org/x/lint/golint@latest
 )
 
 echo "🏃 Installing go packages in progress ..."

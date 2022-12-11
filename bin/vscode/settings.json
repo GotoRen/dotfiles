@@ -81,7 +81,6 @@
   // Go
   "go.useLanguageServer": true,
   "go.toolsManagement.autoUpdate": true,
-  "go.inferGopath": false,
 
   // HTML
   "[html]": {
@@ -243,6 +242,13 @@
   "[ruby]": {
     "editor.tabSize": 2,
     "editor.defaultFormatter": "misogi.ruby-rubocop",
+    "editor.formatOnSave": true
+  },
+
+  // Docker
+  "[dockerfile]": {
+    "editor.tabSize": 4,
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker",
     "editor.formatOnSave": true
   }
 }
