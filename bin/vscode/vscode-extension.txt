@@ -18,11 +18,13 @@ EditorConfig.EditorConfig@0.16.4
 eightHundreds.vscode-drawio@1.0.3
 esbenp.prettier-vscode@9.10.3
 ExecutableBookProject.myst-highlight@0.11.0
+felixrieseberg.vsc-travis-ci-status@1.1.0
 formulahendry.auto-close-tag@0.5.14
 formulahendry.auto-rename-tag@0.1.10
 formulahendry.code-runner@0.11.8
 foxundermoon.shell-format@7.2.2
 geeksharp.openssl-configuration-file@0.0.1
+Glavin001.unibeautify-vscode@0.8.2
 glenn2223.live-sass@5.5.1
 golang.go@0.37.0
 hashicorp.terraform@2.25.2
@@ -97,7 +99,7 @@ vscjava.vscode-java-pack@0.25.7
 vscjava.vscode-java-test@0.37.1
 vscjava.vscode-maven@0.40.2
 vscode-icons-team.vscode-icons@12.0.1
-Vue.volar@1.0.17
+Vue.volar@1.0.18
 wayou.vscode-icons-mac@7.25.3
 wholroyd.jinja@0.0.8
 wingrunr21.vscode-ruby@0.28.0
