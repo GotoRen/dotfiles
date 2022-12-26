@@ -196,6 +196,10 @@
 
   // Ansible
   "ansible.validation.lint.enabled": false,
+  "[ansible]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
 
   // Python
   "[python]": {
