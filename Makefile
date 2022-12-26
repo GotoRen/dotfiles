@@ -17,6 +17,7 @@ setup: ## Run all bin/shell
 	${SHELL} ./bin/setup.sh
 
 
+
 # Install tools
 #===============================================================
 asdf-install: ## Install asdf plugins
@@ -31,6 +32,9 @@ gcloud-install: ## Install google-cloud-sdk plugins
 go-install: ## Install go packages
 	${SHELL} ./bin/go-package.sh
 
+pip3-install: ## Install pip3 packages
+	${SHELL} ./bin/pip3-package.sh
+
 gem-install: ## Install gem rakes
 	${SHELL} ./bin/gem-rake.sh
 
@@ -39,6 +43,7 @@ nvm-install: ## Install nvm packages
 
 vscode-install: ## VSCode settings
 	${SHELL} ./bin/vscode/vscode.sh
+
 
 
 # Files for each environment

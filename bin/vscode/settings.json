@@ -192,6 +192,10 @@
   },
   "yaml.format.enable": true,
   "redhat.telemetry.enabled": true,
+  "yaml.schemaStore.enable": false,
+
+  // Ansible
+  "ansible.validation.lint.enabled": false,
 
   // Python
   "[python]": {
@@ -237,6 +241,7 @@
     "editor.defaultFormatter": "foxundermoon.shell-format",
     "editor.formatOnSave": true
   },
+  "shellcheck.enable": false,
 
   // Ruby/Vagrant
   "[ruby]": {
