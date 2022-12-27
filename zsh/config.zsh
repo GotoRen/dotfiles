@@ -2,7 +2,7 @@
 ### version control
 ####################################################
 # asdf
-. /home/linuxbrew/.linuxbrew/Cellar/asdf/0.10.2/libexec/asdf.sh
+. /home/linuxbrew/.linuxbrew/Cellar/asdf/0.11.0/libexec/asdf.sh
 
 # nvm
 source $(brew --prefix nvm)/nvm.sh
@@ -37,7 +37,7 @@ export KUBECTL_EXTERNAL_DIFF="dyff between --omit-header --set-exit-code"
 source <(kubectl completion zsh)
 source <(kustomize completion zsh)
 source <(helm completion zsh)
-source '/home/linuxbrew/.linuxbrew/Cellar/kube-ps1/0.7.0/share/kube-ps1.sh'
+source '/home/linuxbrew/.linuxbrew/Cellar/kube-ps1/0.8.0/share/kube-ps1.sh'
 PS1='$(kube_ps1)'$PS1
 
 # golang
