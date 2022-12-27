@@ -1,7 +1,3 @@
-Host *
-        AddKeysToAgent yes
-        UseKeychain yes
-
 Host github.com
         HostName github.com
         User git
