@@ -21,6 +21,8 @@ packages=(
   jest
   neovim
   prometheus-api-metrics
+  serve
+  tsm
   typescript
   vue-cli
   webpack
@@ -35,3 +37,4 @@ for package in "${packages[@]}"; do
 done
 
 npm list --global
+npm version

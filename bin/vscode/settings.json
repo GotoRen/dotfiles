@@ -81,6 +81,11 @@
   // Go
   "go.useLanguageServer": true,
   "go.toolsManagement.autoUpdate": true,
+  "[go]": {
+    "editor.defaultFormatter": "golang.go",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4
+  },
 
   // HTML
   "[html]": {
@@ -97,6 +102,12 @@
   "html.format.unformatted": "wbr",
   "html.format.wrapAttributes": "auto",
   "html.format.wrapLineLength": 120,
+
+  // Markdown
+  "[markdown]": {
+    "editor.defaultFormatter": "svipas.prettier-plus",
+    "editor.formatOnSave": true
+  },
 
   // CSS
   "[css]": {
