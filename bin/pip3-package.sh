@@ -1,15 +1,17 @@
 #!/bin/bash -e
 
 packages=(
+  pipenv
+  pylint
   rfcbibtex
 )
 
-echo "🏃 Installing pip3 packages in progress ..."
+echo "🏃 Installing pip packages in progress ..."
 
-pip3 install --upgrade pip
+pip install --upgrade pip
 
 for package in ${packages[@]}; do
-  pip3 install ${package}
+  pip install ${package}
 done
 
-pip3 list
+pip list
