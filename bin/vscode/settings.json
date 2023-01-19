@@ -218,6 +218,7 @@
     "editor.defaultFormatter": "ms-python.python",
     "editor.formatOnType": true
   },
+  "python.defaultInterpreterPath": "~/.asdf/shims/python3.11",
   "python.linting.pylintEnabled": true,
   "python.formatting.provider": "black",
   "python.linting.pylintArgs": ["--generate-members"],
