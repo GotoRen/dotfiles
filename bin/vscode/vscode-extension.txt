@@ -50,12 +50,14 @@ mkhl.shfmt@1.2.0
 ms-azuretools.vscode-docker@1.23.3
 MS-CEINTL.vscode-language-pack-ja@1.74.12140928
 ms-kubernetes-tools.vscode-kubernetes-tools@1.3.11
+ms-python.black-formatter@2022.6.0
 ms-python.isort@2022.8.0
+ms-python.pylint@2022.7.13271012
 ms-python.python@2023.1.10091012
-ms-python.vscode-pylance@2023.1.20
+ms-python.vscode-pylance@2023.1.30
 ms-toolsai.jupyter@2022.11.1003412109
 ms-toolsai.jupyter-keymap@1.0.0
-ms-toolsai.jupyter-renderers@1.0.13
+ms-toolsai.jupyter-renderers@1.0.14
 ms-toolsai.vscode-jupyter-cell-tags@0.1.6
 ms-toolsai.vscode-jupyter-slideshow@0.1.5
 ms-vscode-remote.remote-containers@0.266.1

@@ -215,7 +215,8 @@
   // Python
   "[python]": {
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "ms-python.python"
+    "editor.defaultFormatter": "ms-python.python",
+    "editor.formatOnType": true
   },
   "python.linting.pylintEnabled": true,
   "python.formatting.provider": "black",
