@@ -42,3 +42,7 @@ bindkey '^x^e' emoji::cli
 
 # cooperation with peco
 zi light 'mollifier/anyframe'
+
+# kube-ps1
+zinit light jonmosco/kube-ps1
+PROMPT='$(kube_ps1)'$PROMPT

@@ -39,7 +39,7 @@ export KUBECTL_EXTERNAL_DIFF="dyff between --omit-header --set-exit-code"
 source <(kubectl completion zsh)
 source <(kustomize completion zsh)
 source <(helm completion zsh)
-source '/usr/local/opt/kube-ps1/share/kube-ps1.sh'
+source $HOME/.zi/plugins/jonmosco---kube-ps1/kube-ps1.sh
 PS1='$(kube_ps1)'$PS1
 
 # golang
