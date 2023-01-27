@@ -16,6 +16,7 @@
   "explorer.confirmDelete": false,
   "vsicons.dontShowNewVersionMessage": true,
   "editor.detectIndentation": false,
+  "files.trimTrailingWhitespace": true,
 
   // Latex
   "latex-workshop.latex.tools": [
