@@ -25,6 +25,7 @@ done
 legacy_packages=(
   github.com/oxequa/realize
   github.com/tools/godep
+  github.com/globusdigital/deep-copy
 )
 
 echo "🏃 Installing go legacy packages in progress ..."

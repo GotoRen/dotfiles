@@ -224,6 +224,13 @@
   "python.formatting.provider": "black",
   "python.linting.pylintArgs": ["--generate-members"],
 
+  // Django
+  "[django-html]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+
   // SQL
   "[sql]": {
     "editor.tabSize": 2,

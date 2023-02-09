@@ -14,6 +14,7 @@ tools=(
   flutter
   fzf
   golang
+  golangci-lint
   hadolint
   helm
   helm-cr
