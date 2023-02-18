@@ -206,6 +206,9 @@
   "redhat.telemetry.enabled": true,
   "yaml.schemaStore.enable": false,
 
+  // PUML
+  "plantuml.exportOutDir": ".",
+
   // Ansible
   "ansible.validation.lint.enabled": false,
   "[ansible]": {
