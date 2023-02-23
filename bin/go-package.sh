@@ -13,6 +13,7 @@ packages=(
   mvdan.cc/gofumpt@latest
   golang.org/x/mobile/cmd/gomobile@latest
   golang.org/x/lint/golint@latest
+  github.com/reviewdog/reviewdog/cmd/reviewdog@latest
 )
 
 echo "🏃 Installing go packages in progress ..."
