@@ -36,5 +36,14 @@ for package in "${packages[@]}"; do
   npm install --global ${package}
 done
 
+npm_packages=(
+  pnpm
+)
+
+echo "🏃 Installing npm packages in progress ..."
+for npm_package in "${npm_packages[@]}"; do
+  npm install --global ${npm_package}
+done
+
 npm list --global
 npm version
