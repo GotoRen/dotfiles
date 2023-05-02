@@ -27,6 +27,8 @@ formulahendry.auto-rename-tag@0.1.10
 formulahendry.code-runner@0.12.0
 foxundermoon.shell-format@7.2.5
 geeksharp.openssl-configuration-file@0.0.1
+GitHub.copilot@1.84.51
+GitHub.github-vscode-theme@6.3.4
 Glavin001.unibeautify-vscode@0.8.2
 glenn2223.live-sass@6.0.4
 golang.go@0.38.0
@@ -36,6 +38,7 @@ hediet.vscode-drawio@1.6.6
 HexcodeTechnologies.vscode-prettydiff@0.6.5
 imperez.smarty@0.3.0
 inercia.vscode-k3d@0.0.10
+ipedrazas.kubernetes-snippets@0.1.9
 jackfranklin.vscode-go-to-file@0.0.1
 James-Yu.latex-workshop@9.8.2
 janisdd.vscode-edit-csv@0.7.4
@@ -90,6 +93,7 @@ styled-components.vscode-styled-components@1.7.5
 svipas.prettier-plus@4.2.2
 syler.sass-indented@1.8.26
 tamasfe.even-better-toml@0.19.0
+technosophos.vscode-helm@0.4.0
 tialki.tex-preview@0.0.4
 Tim-Koehler.helm-intellisense@0.14.3
 timonwong.shellcheck@0.31.1
@@ -109,6 +113,7 @@ vscjava.vscode-java-test@0.38.2
 vscjava.vscode-maven@0.41.0
 vscode-icons-team.vscode-icons@12.2.0
 Vue.volar@1.2.0
+vunguyentuan.vscode-css-variables@2.6.3
 wayou.vscode-icons-mac@7.25.3
 wholroyd.jinja@0.0.8
 wingrunr21.vscode-ruby@0.28.0

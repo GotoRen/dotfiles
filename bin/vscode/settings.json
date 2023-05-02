@@ -1,6 +1,6 @@
 {
   // Workbench
-  "workbench.colorTheme": "Default High Contrast",
+  "workbench.colorTheme": "GitHub Dark Default",
   "workbench.iconTheme": "vscode-icons",
   "workbench.startupEditor": "none",
   "workbench.colorCustomizations": {
@@ -17,6 +17,11 @@
   "vsicons.dontShowNewVersionMessage": true,
   "editor.detectIndentation": false,
   "files.trimTrailingWhitespace": true,
+  "editor.inlineSuggest.enabled": true,
+  "files.associations": {
+    "*.mdx": "markdown",
+    "*helmfile*.yaml": "helm"
+  },
 
   // Latex
   "latex-workshop.latex.tools": [
@@ -118,8 +123,7 @@
   "liveSassCompile.settings.formats": [
     {
       "format": "compressed",
-      "extensionName": ".css",
-      "savePath": "/css"
+      "extensionName": ".css"
     }
   ],
 
@@ -248,8 +252,8 @@
 
   // Kubernetes
   "vs-kubernetes": {
-    "vscode-kubernetes.minikube-path.mac": "/Users/ren/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
-    "vscode-kubernetes.kubectl-path.mac": "/Users/ren/.vs-kubernetes/tools/kubectl/kubectl"
+    "vscode-kubernetes.minikube-path.mac": "/Users/s20592/.vs-kubernetes/tools/minikube/darwin-arm64/minikube",
+    "vscode-kubernetes.kubectl-path.mac": "/Users/s20592/.vs-kubernetes/tools/kubectl/kubectl"
   },
 
   // C/C++
