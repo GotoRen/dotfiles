@@ -1,24 +1,24 @@
 [user]
-	name = GotoRen
-	email = r0719en@pluslab.org
+    name = GotoRen
+    email = r0719en@pluslab.org
 [alias]
-	#graph = log --graph --date-order -C -M --pretty=format:\"<%h> %ad [%an] %Cgreen%d%Creset %s\" --all --date=short
-	graph = log --graph --decorate --abbrev-commit --format=format:'%C(blue)%h%C(reset) - %C(green)(%ar)%C(reset)%C(yellow)%d%C(reset)\n  %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'
+    #graph = log --graph --date-order -C -M --pretty=format:\"<%h> %ad [%an] %Cgreen%d%Creset %s\" --all --date=short
+    graph = log --graph --decorate --abbrev-commit --format=format:'%C(blue)%h%C(reset) - %C(green)(%ar)%C(reset)%C(yellow)%d%C(reset)\n  %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'
 [color]
-	ui = true
+    ui = true
 [core]
-	excludesfile = /Users/s20592/.gitignore_global
+    excludesfile = /Users/ren/.gitignore_global
 [difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+    cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+    path =
 [mergetool "sourcetree"]
-	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+    cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+    trustExitCode = true
 [commit]
-	template = $HOME/.stCommitMsg
+    template = $HOME/.stCommitMsg
 [http]
-	sslVerify = true
+    sslVerify = true
 [safe]
-	directory = $HOME/dotfiles
+    directory = $HOME/dotfiles
 [diff "sopsdiffer"]
-	textconv = sops -d
+    textconv = sops -d
