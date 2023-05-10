@@ -1,7 +1,6 @@
 #!/bin/bash -e
 
 tools=(
-  aks-engine
   ansible-base
   argo
   argocd
@@ -33,6 +32,7 @@ tools=(
   kotlin
   kscript
   kube-linter
+  kubebuilder
   kubectl
   kubectx
   kubeval
