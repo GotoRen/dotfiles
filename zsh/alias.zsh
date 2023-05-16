@@ -30,7 +30,7 @@ alias dn='docker network ls'
 alias dv='docker volume ls'
 alias dc='docker compose'
 alias didown='docker system prune --all'
-alias dvdown='docker volume prune'
+alias dvdown='docker volume prune --all'
 
 alias k='kubectl'
 alias kon='kubeon'
