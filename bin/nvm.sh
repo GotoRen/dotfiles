@@ -24,6 +24,7 @@ packages=(
   serve
   tsm
   typescript
+  spaceship-prompt
   vue-cli
   webpack
   webpack-cli

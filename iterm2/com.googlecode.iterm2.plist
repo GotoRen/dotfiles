@@ -1460,6 +1460,8 @@
 	<false/>
 	<key>OpenNoWindowsAtStartup</key>
 	<true/>
+	<key>PMPrintingExpandedStateForPrint2</key>
+	<false/>
 	<key>PMPrintingPanelSize</key>
 	<string>{777, 828}</string>
 	<key>PointerActions</key>

@@ -10,10 +10,11 @@ packages=(
   github.com/homeport/dyff/cmd/dyff@latest
   github.com/kisielk/errcheck@latest
   github.com/pressly/goose/v3/cmd/goose@latest
-  mvdan.cc/gofumpt@latest
-  golang.org/x/mobile/cmd/gomobile@latest
-  golang.org/x/lint/golint@latest
   github.com/reviewdog/reviewdog/cmd/reviewdog@latest
+  go.k6.io/xk6/cmd/xk6@latest
+  golang.org/x/lint/golint@latest
+  golang.org/x/mobile/cmd/gomobile@latest
+  mvdan.cc/gofumpt@latest
 )
 
 echo "🏃 Installing go packages in progress ..."

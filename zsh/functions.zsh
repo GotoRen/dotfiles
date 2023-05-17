@@ -68,3 +68,16 @@ function select-history() {
 }
 zle -N select-history
 bindkey '^r' select-history
+
+function aws_profile_update() {
+  PROFILES=$(aws configure list-profiles)
+  PROFILES_ARRAY=($(echo $PROFILES))
+  SELECTED_PROFILE=$(echo $PROFILES | peco)
+
+  if [[ -n ${PROFILES_ARRAY[(re)${SELECTED_PROFILE}]} ]]; then
+    export AWS_PROFILE=${SELECTED_PROFILE}
+    echo 'Updated profile'
+  else
+    echo ''
+  fi
+}

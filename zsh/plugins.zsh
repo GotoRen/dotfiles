@@ -46,3 +46,6 @@ zi light 'mollifier/anyframe'
 # kube-ps1
 zinit light jonmosco/kube-ps1
 PROMPT='$(kube_ps1)'$PROMPT
+
+# AWS profile selection: spaceship-prompt
+autoload -U promptinit promptinit

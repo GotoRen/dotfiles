@@ -26,7 +26,7 @@ eval "$(direnv hook zsh)"
 export DIRENV_WARN_TIMEOUT=50s
 
 # aws
-export AWS_PROFILE=awsGeneral-1
+export AWS_PROFILE=default
 
 # gcp
 source '/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
@@ -47,4 +47,4 @@ export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
 # openssl
-export PATH=/opt/homebrew/Cellar/openssl@3/3.0.7/bin:$PATH
+export PATH=/opt/homebrew/Cellar/openssl@3/3.1.0/bin:$PATH
