@@ -19,6 +19,6 @@
 [http]
     sslVerify = true
 [safe]
-	directory = $HOME/dotfiles
+    directory = $HOME/dotfiles
 [diff "sopsdiffer"]
     textconv = sops -d
