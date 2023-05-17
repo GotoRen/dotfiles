@@ -83,8 +83,8 @@ format = 'on [$symbol$profile(\($region\))]($style) '
 style = "#FFFF00 bold"
 symbol = "☁️⚡️ AWS>> "
 [aws.region_aliases]
-ap-northeast-1 = "aws-ap"
-us-east-1 = "aws-va"
+ap-northeast-1 = "ap-northeast-1"
+us-east-1 = "us-east-1"
 
 [gcloud]
 format = 'on [$symbol$account(@$domain)(\($project\))]($style) '
@@ -92,7 +92,7 @@ style = "#00FFFF bold"
 symbol = "☁️⚡️ GCP>> "
 [gcloud.region_aliases]
 us-central1 = "gcp-uc1"
-asia-northeast1 = "gcp-an1"  
+asia-northeast1 = "gcp-an1"
 
 [docker_context]
 format = "via [$symbol](blue bold)"

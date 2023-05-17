@@ -24,6 +24,8 @@ alias gb='git branch'
 alias gch='git checkout'
 alias grs='git reset --soft HEAD^'
 
+alias awsp='aws_profile_update'
+
 alias dp='docker ps'
 alias di='docker images'
 alias dn='docker network ls'

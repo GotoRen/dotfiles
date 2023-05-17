@@ -10,10 +10,11 @@ packages=(
   github.com/homeport/dyff/cmd/dyff@latest
   github.com/kisielk/errcheck@latest
   github.com/pressly/goose/v3/cmd/goose@latest
-  mvdan.cc/gofumpt@latest
-  golang.org/x/mobile/cmd/gomobile@latest
-  golang.org/x/lint/golint@latest
   github.com/reviewdog/reviewdog/cmd/reviewdog@latest
+  golang.org/x/lint/golint@latest
+  golang.org/x/mobile/cmd/gomobile@latest
+  go.k6.io/xk6/cmd/xk6@latest
+  mvdan.cc/gofumpt@latest
 )
 
 echo "🏃 Installing go packages in progress ..."
@@ -24,10 +25,10 @@ done
 
 ### go version < 1.17
 legacy_packages=(
-  github.com/oxequa/realize
-  github.com/tools/godep
   github.com/globusdigital/deep-copy
   github.com/google/wire/cmd/wire
+  github.com/oxequa/realize
+  github.com/tools/godep
 )
 
 echo "🏃 Installing go legacy packages in progress ..."

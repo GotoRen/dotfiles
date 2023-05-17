@@ -26,7 +26,7 @@ eval "$(direnv hook zsh)"
 export DIRENV_WARN_TIMEOUT=50s
 
 # aws
-export AWS_PROFILE=awsGeneral-1
+export AWS_PROFILE=default
 
 # gcp
 source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'

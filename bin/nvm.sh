@@ -22,6 +22,7 @@ packages=(
   neovim
   prometheus-api-metrics
   serve
+  spaceship-prompt
   tsm
   typescript
   vue-cli
