@@ -25,6 +25,7 @@ tools=(
   heroku-cli
   jq
   jsonnet
+  k3d
   k6
   k9s
   kind
