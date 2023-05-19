@@ -10,3 +10,6 @@ if [ -d ${ZSH_PATH} ]; then
 else
   print "ZSH CONFIGS NOT FOUND: ~/.zsh"
 fi
+
+### issue: https://github.com/b4b4r07/enhancd/issues/206
+source ${HOME}/.zi/plugins/enhancd/init.sh

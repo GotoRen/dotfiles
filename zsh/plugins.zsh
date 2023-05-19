@@ -15,7 +15,8 @@ zi light chrissicool/zsh-256color
 zi light reegnz/jq-zsh-plugin
 
 # enhancd
-zi light b4b4r07/enhancd
+### issue: https://github.com/b4b4r07/enhancd/issues/206
+# zi light b4b4r07/enhancd
 
 # fzf
 zi ice as"command" from"gh-r" mv"fzf* -> fzf" pick"fzf/fzf"

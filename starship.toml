@@ -1,8 +1,5 @@
-# プロンプトの先頭に改行を表示しない
-add_newline = false
-
-# ディレクトリ配下のファイルを確認するまで 10ms 待つ
-scan_timeout = 10
+add_newline = false # Disable the newline at the start of the prompt
+scan_timeout = 10 # Waiting 10 milliseconds for starship to check files under the current directory.
 
 [battery]
 full_symbol = "🔋"
@@ -10,14 +7,13 @@ charging_symbol = "⚡️"
 discharging_symbol = "💀"
 
 [character]
-success_symbol = "[🚀{っ*´∀`*}っ ⟫⟫⟫](#00FF00 bold)"
-error_symbol = "[💣✗{｡´･ω･`} ⟫⟫⟫](bold red)"
+success_symbol = "[💗➜](#00FF00 bold)"
+error_symbol = "[💔✗](bold red)"
 
 [directory]
-style = "#FF00FF bold"
+style = "#ba55d3"
 truncation_length = 0
 truncate_to_repo = false
-read_only = "🔒"
 
 [dotnet]
 symbol = "🥅 "
@@ -28,9 +24,9 @@ heuristic = false
 disabled = false
 
 [git_branch]
-style = "#7CFC00 bold"
-symbol = "🌱: "
-truncation_length = 50
+style = "#dda0dd"
+symbol = "♥: "
+truncation_length = 4
 truncation_symbol = ""
 
 [git_commit]
@@ -67,8 +63,7 @@ symbol = " "
 style = "bold dimmed green"
 
 [nodejs]
-style = "#FF0000"
-symbol = "⬢ "
+style = "#ffc0cb"
 
 [ruby]
 symbol = " "
@@ -77,23 +72,3 @@ style = "#ffc0cb"
 [package]
 style = "#ffc0cb"
 symbol = " "
-
-[aws]
-format = 'on [$symbol$profile(\($region\))]($style) '
-style = "#FFFF00 bold"
-symbol = "☁️⚡️ AWS>> "
-[aws.region_aliases]
-ap-northeast-1 = "ap-northeast-1"
-us-east-1 = "us-east-1"
-
-[gcloud]
-format = 'on [$symbol$account(@$domain)(\($project\))]($style) '
-style = "#00FFFF bold"
-symbol = "☁️⚡️ GCP>> "
-[gcloud.region_aliases]
-us-central1 = "gcp-uc1"
-asia-northeast1 = "gcp-an1"
-
-[docker_context]
-format = "via [$symbol](blue bold)"
-symbol = "🐳 "
