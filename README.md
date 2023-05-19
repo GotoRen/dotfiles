@@ -1,4 +1,5 @@
 # dotfiles
+
 A set of zsh, git, neovim and tmux configuration files.
 
 ![GitHub Repo stars](https://img.shields.io/github/stars/GotoRen/dotfiles?style=social)

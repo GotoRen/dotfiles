@@ -37,7 +37,6 @@ hashicorp.terraform@2.25.4
 hbenl.vscode-test-explorer@2.21.1
 hediet.vscode-drawio@1.6.6
 HexcodeTechnologies.vscode-prettydiff@0.6.5
-imperez.smarty@0.3.0
 inercia.vscode-k3d@0.0.10
 ipedrazas.kubernetes-snippets@0.1.9
 jackfranklin.vscode-go-to-file@0.0.1

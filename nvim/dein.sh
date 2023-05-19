@@ -1,6 +1,6 @@
 #!/bin/bash
 
-curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh >${HOME}/installer.sh
+curl https://raw.githubusercontent.com/GotoRen/dein.vim/release/bin/installer.sh >${HOME}/installer.sh
 
 if [[ ! -f ${HOME}/.cache ]]; then
   mkdir ${HOME}/.cache
