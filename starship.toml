@@ -26,7 +26,7 @@ disabled = false
 [git_branch]
 style = "#dda0dd"
 symbol = "♥: "
-truncation_length = 4
+truncation_length = 20
 truncation_symbol = ""
 
 [git_commit]
