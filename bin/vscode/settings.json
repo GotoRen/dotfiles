@@ -236,7 +236,7 @@
   // Python
   "[python]": {
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "ms-python.python",
+    "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.formatOnType": true
   },
   "python.defaultInterpreterPath": "~/.asdf/shims/python3.11",
@@ -302,5 +302,13 @@
     "editor.tabSize": 4,
     "editor.defaultFormatter": "ms-azuretools.vscode-docker",
     "editor.formatOnSave": true
+  },
+
+  // Copilot
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
   }
 }
