@@ -34,7 +34,6 @@ source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.
 export USE_GKE_GCLOUD_AUTH_PLUGIN=True
 
 # k8s
-export PATH="${PATH}:${HOME}/.krew/bin"
 export KUBECTL_EXTERNAL_DIFF="dyff between --omit-header --set-exit-code"
 source <(kubectl completion zsh)
 source <(kustomize completion zsh)

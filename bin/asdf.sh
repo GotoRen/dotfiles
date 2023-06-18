@@ -32,6 +32,7 @@ tools=(
   ko
   kops
   kotlin
+  krew
   kscript
   kube-linter
   kubebuilder
