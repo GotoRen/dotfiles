@@ -46,6 +46,7 @@ tools=(
   mongodb
   mysql
   php
+  pipectl
   postgres
   pre-commit
   python
