@@ -32,7 +32,7 @@ GitHub.github-vscode-theme@6.3.4
 github.vscode-github-actions@0.25.7
 Glavin001.unibeautify-vscode@0.8.2
 glenn2223.live-sass@6.0.4
-golang.go@0.38.0
+golang.go@0.39.0
 hashicorp.terraform@2.25.4
 hbenl.vscode-test-explorer@2.21.1
 hediet.vscode-drawio@1.6.6
@@ -76,6 +76,7 @@ ms-vscode.test-adapter-converter@0.1.7
 ms-vsliveshare.vsliveshare@1.0.5834
 mtxr.sqltools@0.27.1
 mtxr.sqltools-driver-sqlite@0.5.0
+nickfode.latex-formatter@1.0.5
 njpwerner.autodocstring@0.6.1
 Okteto.kubernetes-context@0.1.0
 plex.vscode-regolint@0.2.0
