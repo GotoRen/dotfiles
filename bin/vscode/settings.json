@@ -265,8 +265,8 @@
 
   // Kubernetes
   "vs-kubernetes": {
-    "vscode-kubernetes.minikube-path.mac": "/Users/ren/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
-    "vscode-kubernetes.kubectl-path.mac": "/Users/ren/.vs-kubernetes/tools/kubectl/kubectl"
+    "vscode-kubernetes.minikube-path.mac": "/Users/s20592/.vs-kubernetes/tools/minikube/darwin-arm64/minikube",
+    "vscode-kubernetes.kubectl-path.mac": "/Users/s20592/.vs-kubernetes/tools/kubectl/kubectl"
   },
 
   // C/C++
@@ -306,9 +306,9 @@
 
   // Copilot
   "github.copilot.enable": {
-    "*": false,
+    "*": true,
     "plaintext": false,
-    "markdown": false,
+    "markdown": true,
     "scminput": false
   }
 }
