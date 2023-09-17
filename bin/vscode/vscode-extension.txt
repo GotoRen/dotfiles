@@ -7,7 +7,6 @@ bbenoist.vagrant@0.5.0
 bierner.markdown-preview-github-styles@0.2.0
 bmewburn.vscode-intelephense-client@1.9.5
 bodil.prettier-toml@0.1.0
-bungcip.better-toml@0.3.2
 ChakrounAnas.turbo-console-log@2.7.3
 christian-kohler.npm-intellisense@1.4.4
 cstrap.flask-snippets@0.1.3
@@ -27,7 +26,6 @@ formulahendry.auto-rename-tag@0.1.10
 formulahendry.code-runner@0.12.0
 foxundermoon.shell-format@7.2.5
 geeksharp.openssl-configuration-file@0.0.1
-GitHub.copilot@1.84.51
 GitHub.github-vscode-theme@6.3.4
 github.vscode-github-actions@0.25.7
 Glavin001.unibeautify-vscode@0.8.2
@@ -40,7 +38,7 @@ HexcodeTechnologies.vscode-prettydiff@0.6.5
 inercia.vscode-k3d@0.0.10
 ipedrazas.kubernetes-snippets@0.1.9
 jackfranklin.vscode-go-to-file@0.0.1
-James-Yu.latex-workshop@9.8.2
+James-Yu.latex-workshop@9.13.4
 janisdd.vscode-edit-csv@0.7.4
 jebbs.plantuml@2.17.5
 JHeilingbrunner.vscode-gnupg-tool@1.3.9
@@ -55,7 +53,7 @@ mkhl.shfmt@1.2.0
 ms-azuretools.vscode-docker@1.24.0
 MS-CEINTL.vscode-language-pack-ja@1.77.2023032909
 ms-kubernetes-tools.vscode-kubernetes-tools@1.3.11
-ms-python.black-formatter@2022.6.0
+ms-python.black-formatter@2023.4.1
 ms-python.isort@2022.8.0
 ms-python.pylint@2023.5.10901018
 ms-python.python@2023.7.10931008
@@ -67,7 +65,7 @@ ms-toolsai.vscode-jupyter-cell-tags@0.1.8
 ms-toolsai.vscode-jupyter-slideshow@0.1.5
 ms-vscode-remote.remote-containers@0.288.0
 ms-vscode.cmake-tools@1.13.45
-ms-vscode.cpptools@1.14.5
+ms-vscode.cpptools@1.17.5
 ms-vscode.cpptools-extension-pack@1.3.0
 ms-vscode.cpptools-themes@2.0.0
 ms-vscode.live-server@0.4.8
@@ -81,7 +79,7 @@ njpwerner.autodocstring@0.6.1
 Okteto.kubernetes-context@0.1.0
 plex.vscode-regolint@0.2.0
 qwtel.sqlite-viewer@0.2.3
-redhat.ansible@1.2.44
+redhat.ansible@2.7.98
 redhat.java@1.16.0
 redhat.vscode-yaml@1.12.2
 rohit-chouhan.sqlite-snippet@2.0.1
@@ -93,7 +91,7 @@ streetsidesoftware.hunspell@1.0.3
 styled-components.vscode-styled-components@1.7.5
 svipas.prettier-plus@4.2.2
 syler.sass-indented@1.8.26
-tamasfe.even-better-toml@0.19.0
+tamasfe.even-better-toml@0.19.2
 technosophos.vscode-helm@0.4.0
 tialki.tex-preview@0.0.4
 Tim-Koehler.helm-intellisense@0.14.3
