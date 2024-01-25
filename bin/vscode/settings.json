@@ -85,12 +85,14 @@
     "*.synctex.gz"
   ],
   "[latex]": {
-    "editor.tabSize": 4
-    // "editor.defaultFormatter": "nickfode.latex-formatter",
+    "editor.tabSize": 4,
+    "editor.defaultFormatter": "nickfode.latex-formatter"
     // "editor.formatOnSave": true
   },
   "[bibtex]": {
-    "editor.tabSize": 4
+    "editor.tabSize": 4,
+    "editor.defaultFormatter": "manhen.latex-workshop-2"
+    // "editor.formatOnSave": true
   },
 
   // Draw.io
@@ -260,11 +262,11 @@
   },
 
   // SQL
-  "[sql]": {
-    "editor.tabSize": 2,
-    "editor.defaultFormatter": "adpyke.vscode-sql-formatter",
-    "editor.formatOnSave": true
-  },
+  // "[sql]": {
+  //   "editor.tabSize": 2,
+  //   "editor.defaultFormatter": "adpyke.vscode-sql-formatter",
+  //   "editor.formatOnSave": true
+  // },
 
   // SQLite
   "workbench.editorAssociations": {
