@@ -22,10 +22,6 @@ zi light reegnz/jq-zsh-plugin
 zi ice as"command" from"gh-r" mv"fzf* -> fzf" pick"fzf/fzf"
 zi light junegunn/fzf
 
-# jq command
-zi ice as"command" from"gh-r" mv"jq* -> jq" pick"jq"
-zi light stedolan/jq
-
 # file output
 zi ice as"command" from"gh-r" mv"bat* -> bat" pick"bat/bat"
 zi light sharkdp/bat
