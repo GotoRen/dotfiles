@@ -2,7 +2,7 @@
 ### version control
 ####################################################
 # asdf
-. /usr/local/opt/asdf/libexec/asdf.sh
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
 
 # nvm
 source $(brew --prefix nvm)/nvm.sh
@@ -25,12 +25,9 @@ eval "$(starship init zsh)"
 eval "$(direnv hook zsh)"
 export DIRENV_WARN_TIMEOUT=50s
 
-# aws
-export AWS_PROFILE=rennoaws-1
-
 # gcp
-source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
-source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
+source '/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
+source '/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
 export USE_GKE_GCLOUD_AUTH_PLUGIN=True
 
 # k8s

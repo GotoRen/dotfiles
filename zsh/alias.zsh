@@ -1,4 +1,4 @@
-alias brew="PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin brew"
+alias brew="PATH=/opt/homebrew/bin:/usr/bin:/bin:/opt/homebrew/sbin:/usr/sbin:/sbin brew"
 
 alias sz='source ~/.zshrc'
 alias rezsh='exec $SHELL -l'
@@ -9,6 +9,9 @@ alias ...='cd ../../'
 alias ....='cd ../../../'
 alias ll='eza --icons -la -T --git --color=always --time-style=long-iso -L 1'
 alias c='clear'
+alias e='exit'
+alias C='| pbcopy'
+alias G='| grep --color=auto'
 
 alias vim='nvim'
 alias sed='gsed'
@@ -21,6 +24,7 @@ alias gl='git log'
 alias gg='git graph'
 alias gm='git commit -m'
 alias gp='git push'
+alias gps='git push --set-upstream origin'
 alias gc='git clone'
 alias gb='git branch'
 alias gch='git checkout'

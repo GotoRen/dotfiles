@@ -15,9 +15,11 @@ done
 ln -snfv ${VSCODEPATH}/md-preview.css ${HOME}/.vscode/extensions/bierner.markdown-preview-github-styles-0.2.0/base.css
 
 ### bin/karabiner
-ls -a ${KARABINER} | grep -E ".json" | while read f; do
-  ln -snfv ${KARABINER}/$f ${XDG_CONFIG_HOME}/karabiner/$f
-done
+# ls -a ${KARABINER} | grep -E ".json" | while read f; do
+#   ln -snfv ${KARABINER}/$f ${XDG_CONFIG_HOME}/karabiner/$f
+# done
+ln -snfv ${KARABINER}/karabiner.json ${XDG_CONFIG_HOME}/karabiner/karabiner.json
+ln -snfv ${KARABINER}/discord-enter-modification.json ${XDG_CONFIG_HOME}/karabiner/assets/complex_modifications/discord-enter-modification.json
 
 ### nvim/*.vim
 ls -a ${VIMPATH} | grep -Ev "\.$|.sh|plugins" | while read f; do
