@@ -4,6 +4,7 @@ arjun.swagger-viewer@3.1.2
 aswinkumar863.smarty-template-support@2.1.0
 batisteo.vscode-django@1.10.0
 bbenoist.vagrant@0.5.0
+bierner.markdown-mermaid@1.24.0
 bierner.markdown-preview-github-styles@0.2.0
 bmewburn.vscode-intelephense-client@1.9.5
 bodil.prettier-toml@0.1.0
@@ -27,8 +28,8 @@ formulahendry.auto-rename-tag@0.1.10
 formulahendry.code-runner@0.12.0
 foxundermoon.shell-format@7.2.5
 geeksharp.openssl-configuration-file@0.0.1
-github.copilot@1.193.0
-github.copilot-chat@0.15.1
+github.copilot@1.211.0
+github.copilot-chat@0.17.0
 github.github-vscode-theme@6.3.4
 github.vscode-github-actions@0.25.7
 glavin001.unibeautify-vscode@0.8.2
@@ -48,12 +49,14 @@ jheilingbrunner.vscode-gnupg-tool@1.3.9
 junstyle.php-cs-fixer@0.3.9
 kevinrose.vsc-python-indent@1.18.0
 lunuan.kubernetes-templates@1.3.1
+manhen.latex-workshop-2@9.14.1
 marcostazi.vs-code-vagrantfile@0.0.7
 mariusschulz.yarn-lock-syntax@0.2.0
 mebrahtom.plantumlpreviewer@0.6.0
 mint-lang.mint@0.6.0
 misogi.ruby-rubocop@0.8.6
 mkhl.shfmt@1.2.0
+mrmlnc.vscode-csscomb@5.3.2
 ms-azuretools.vscode-docker@1.24.0
 ms-ceintl.vscode-language-pack-ja@1.77.2023032909
 ms-kubernetes-tools.vscode-kubernetes-tools@1.3.11
@@ -104,6 +107,7 @@ tialki.tex-preview@0.0.4
 tim-koehler.helm-intellisense@0.14.3
 timonwong.shellcheck@0.31.1
 travnsam.vscode-stm32cube-configurator@0.0.1
+tsandall.opa@0.16.0
 twxs.cmake@0.0.17
 tyriar.sort-lines@1.9.1
 vadimcn.vscode-lldb@1.9.0

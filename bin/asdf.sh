@@ -42,9 +42,11 @@ tools=(
   kubie
   kustomize
   minikube
+  mkcert
   mongo-tools
   mongodb
   mysql
+  oci
   php
   pipectl
   postgres
