@@ -23,6 +23,8 @@
     "*.mdx": "markdown",
     "*helmfile*.yaml": "helm"
   },
+  "editor.inlineSuggest.suppressSuggestions": true,
+  "github.copilot.editor.enableAutoCompletions": true,
 
   // Latex
   "latex-workshop.latex.tools": [
@@ -320,8 +322,8 @@
     "editor.defaultFormatter": "ms-azuretools.vscode-docker",
     "editor.formatOnSave": true
   },
-  "editor.inlineSuggest.suppressSuggestions": true,
-  "github.copilot.editor.enableAutoCompletions": true,
+
+  // OPA
   "opa.dependency_paths.opa": "/Users/s20592/opa",
   "opa.dependency_paths.regal": "/Users/s20592/regal",
   "opa.languageServers": ["regal"]

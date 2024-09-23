@@ -14,6 +14,7 @@ tools=(
   fzf
   golang
   golangci-lint
+  grpcurl
   hadolint
   helm
   helm-cr
