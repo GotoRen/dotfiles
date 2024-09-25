@@ -111,6 +111,13 @@
     "editor.tabSize": 4
   },
 
+  // Protobuf
+  "[proto3]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "xaver.clang-format",
+    "editor.formatOnSave": true
+  },
+
   // HTML
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",

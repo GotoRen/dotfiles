@@ -128,6 +128,7 @@ vunguyentuan.vscode-css-variables@2.6.3
 wayou.vscode-icons-mac@7.25.3
 wholroyd.jinja@0.0.8
 xabikos.javascriptsnippets@1.8.0
+xaver.clang-format@1.9.0
 xshrim.txt-syntax@0.2.2
 yamajyn.commandlist@1.1.0
 yokawasa.jwt-debugger@0.4.2
