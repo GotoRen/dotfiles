@@ -1,7 +1,6 @@
 #!/bin/bash -e
 
 packages=(
-  github.com/cloudspannerecosystem/spanner-cli@latest
   github.com/cosmtrek/air@latest
   github.com/daichirata/hammer@latest
   github.com/evilmartians/lefthook@latest
@@ -15,7 +14,10 @@ packages=(
   go.k6.io/xk6/cmd/xk6@latest
   golang.org/x/lint/golint@latest
   golang.org/x/mobile/cmd/gomobile@latest
+  google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest
+  google.golang.org/protobuf/cmd/protoc-gen-go@latest
   mvdan.cc/gofumpt@latest
+  github.com/cloudspannerecosystem/spanner-cli@latest
 )
 
 echo "🏃 Installing go packages in progress ..."
