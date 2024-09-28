@@ -42,6 +42,7 @@ tools=(
   kubeval
   kubie
   kustomize
+  lua
   minikube
   mkcert
   mongo-tools

@@ -292,7 +292,9 @@
   // Kubernetes
   "vs-kubernetes": {
     "vscode-kubernetes.minikube-path.mac": "/Users/s20592/.vs-kubernetes/tools/minikube/darwin-arm64/minikube",
-    "vscode-kubernetes.kubectl-path.mac": "/Users/s20592/.vs-kubernetes/tools/kubectl/kubectl"
+    "vscode-kubernetes.kubectl-path.mac": "/Users/s20592/.vs-kubernetes/tools/kubectl/kubectl",
+    "vs-kubernetes.crd-code-completion": "enabled",
+    "vs-kubernetes.ignore-recommendations": true
   },
 
   // C/C++
@@ -315,6 +317,13 @@
     "editor.formatOnSave": true
   },
   "shellcheck.enable": false,
+
+  // Lua
+  "[lua]": {
+    "editor.tabSize": 4,
+    "editor.defaultFormatter": "Koihik.vscode-lua-format",
+    "editor.formatOnSave": true
+  },
 
   // Ruby/Vagrant
   "[ruby]": {
