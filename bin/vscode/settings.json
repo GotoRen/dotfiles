@@ -236,6 +236,7 @@
   // YAML
   "[yaml]": {
     "editor.defaultFormatter": "redhat.vscode-yaml",
+    "editor.tabSize": 2,
     "editor.formatOnSave": true
   },
   "yaml.format.enable": true,

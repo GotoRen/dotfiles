@@ -12,6 +12,7 @@ tools=(
   fd
   flutter
   fzf
+  gator
   golang
   golangci-lint
   grpcurl
@@ -31,6 +32,7 @@ tools=(
   k9s
   kind
   ko
+  konstraint
   kops
   kotlin
   krew
@@ -49,6 +51,7 @@ tools=(
   mongodb
   mysql
   oci
+  opa
   php
   pipectl
   postgres
