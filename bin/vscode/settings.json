@@ -295,7 +295,8 @@
     "vscode-kubernetes.minikube-path.mac": "/Users/s20592/.vs-kubernetes/tools/minikube/darwin-arm64/minikube",
     "vscode-kubernetes.kubectl-path.mac": "/Users/s20592/.vs-kubernetes/tools/kubectl/kubectl",
     "vs-kubernetes.crd-code-completion": "enabled",
-    "vs-kubernetes.ignore-recommendations": true
+    "vs-kubernetes.ignore-recommendations": true,
+    "vscode-kubernetes.minikube-path-mac": "/Users/s20592/.vs-kubernetes/tools/minikube/darwin-arm64/minikube"
   },
 
   // C/C++
@@ -341,7 +342,9 @@
   },
 
   // OPA
-  "opa.dependency_paths.opa": "/Users/s20592/opa",
-  "opa.dependency_paths.regal": "/Users/s20592/regal",
-  "opa.languageServers": ["regal"]
+  "opa.dependency_paths.regal": "/Users/s20592/opa",
+  "opa.languageServers": ["opa"],
+  "explorer.confirmDragAndDrop": false,
+
+  "[rego]": {}
 }

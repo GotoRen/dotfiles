@@ -50,10 +50,12 @@ tools=(
   mongo-tools
   mongodb
   mysql
+  nova
   oci
   opa
   php
   pipectl
+  pluto
   postgres
   pre-commit
   python
