@@ -29,7 +29,7 @@ formulahendry.code-runner@0.12.0
 foxundermoon.shell-format@7.2.5
 geeksharp.openssl-configuration-file@0.0.1
 github.copilot@1.211.0
-github.copilot-chat@0.17.0
+github.copilot-chat@0.22.1
 github.github-vscode-theme@6.3.4
 github.vscode-github-actions@0.25.7
 glavin001.unibeautify-vscode@0.8.2

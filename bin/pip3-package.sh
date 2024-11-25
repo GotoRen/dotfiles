@@ -1,6 +1,7 @@
 #!/bin/bash -e
 
 packages=(
+  openai
   pipenv
   pylint
   rfcbibtex
