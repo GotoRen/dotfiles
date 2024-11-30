@@ -5,6 +5,7 @@ packages=(
   pipenv
   pylint
   rfcbibtex
+  tiktoken
 )
 
 echo "🏃 Installing pip packages in progress ..."
