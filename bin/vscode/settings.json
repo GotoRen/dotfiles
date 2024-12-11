@@ -346,5 +346,6 @@
   "opa.languageServers": ["opa"],
   "explorer.confirmDragAndDrop": false,
 
-  "[rego]": {}
+  "[rego]": {},
+  "jupyter.askForKernelRestart": false
 }
